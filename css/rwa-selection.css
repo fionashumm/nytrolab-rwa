@@ -1,0 +1,824 @@
+/**
+ * RWA待选板块样式
+ */
+
+/* 页面头部 */
+.rwa-selection-header {
+    background: linear-gradient(135deg, var(--color-primary-dark), var(--color-accent));
+    position: relative;
+    overflow: hidden;
+    padding: 6rem 0 4rem;
+}
+
+.rwa-selection-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/grid-pattern.svg');
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.rwa-selection-header .container {
+    position: relative;
+    z-index: 2;
+}
+
+.rwa-selection-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.rwa-selection-header p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.9);
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.header-stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 1.5rem;
+    min-width: 120px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 筛选部分 */
+.rwa-filter-section {
+    background-color: var(--color-bg-light);
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.search-box {
+    display: flex;
+    max-width: 100%;
+    position: relative;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    border: 2px solid var(--color-border);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.search-box input:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.2);
+    outline: none;
+}
+
+.search-box button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--color-text-muted);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.search-box button:hover {
+    color: var(--color-primary);
+}
+
+.filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 200px;
+}
+
+.filter-group label {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    font-weight: 500;
+}
+
+.filter-dropdown {
+    position: relative;
+}
+
+.btn-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    background-color: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-filter:hover {
+    border-color: var(--color-primary);
+}
+
+.btn-filter i {
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.filter-dropdown.active .btn-filter i {
+    transform: rotate(180deg);
+}
+
+.filter-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    z-index: 10;
+    display: none;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.filter-menu label {
+    display: flex;
+    align-items: center;
+    padding: 0.6rem 0.8rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.filter-menu label:hover {
+    background-color: var(--color-bg-light);
+}
+
+.filter-menu input {
+    margin-right: 0.8rem;
+}
+
+/* 项目卡片网格 */
+.rwa-projects-section {
+    padding: 3rem 0;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.section-header h2 {
+    font-size: 1.8rem;
+    color: var(--color-text-dark);
+    position: relative;
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-primary);
+    border-radius: 2px;
+}
+
+.view-toggle {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn-view {
+    background: none;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--color-text-muted);
+    transition: all 0.3s ease;
+}
+
+.btn-view.active {
+    background-color: var(--color-primary);
+    color: #fff;
+    border-color: var(--color-primary);
+}
+
+.rwa-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.rwa-project-card {
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.rwa-project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.rwa-project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+.project-badges {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.badge {
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-hot {
+    background-color: #ff3860;
+}
+
+.badge-new {
+    background-color: #00d1b2;
+}
+
+.badge-trending {
+    background-color: #3273dc;
+}
+
+.badge-almost {
+    background-color: #ffdd57;
+    color: #333;
+}
+
+.project-info {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.project-info h3 {
+    margin: 0 0 0.8rem;
+    font-size: 1.4rem;
+}
+
+.project-info h3 a {
+    color: var(--color-text-dark);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-info h3 a:hover {
+    color: var(--color-primary);
+}
+
+.project-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-category,
+.project-stage {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    background-color: var(--color-bg-light);
+    color: var(--color-text-muted);
+}
+
+.project-desc {
+    margin: 0 0 1.5rem;
+    color: var(--color-text);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.project-stats {
+    margin-top: auto;
+    margin-bottom: 1.5rem;
+}
+
+.heat-meter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.heat-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    margin-right: 0.8rem;
+    min-width: 40px;
+}
+
+.heat-bar {
+    flex: 1;
+    height: 8px;
+    background-color: var(--color-bg-light);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.heat-progress {
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+    border-radius: 4px;
+    position: relative;
+    transition: width 1s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.heat-progress::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.4) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    animation: heatShine 2s infinite;
+}
+
+@keyframes heatShine {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.heat-percentage {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    margin-left: 0.8rem;
+    min-width: 40px;
+    text-align: right;
+}
+
+.project-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.data-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+}
+
+.data-item i {
+    margin-right: 0.5rem;
+    color: var(--color-primary);
+}
+
+.project-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-actions .btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-actions .btn i {
+    margin-right: 0.5rem;
+}
+
+.view-more-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* 信息卡片部分 */
+.rwa-info-section {
+    background-color: var(--color-bg-light);
+    padding: 4rem 0;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.info-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.info-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.info-icon i {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.info-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--color-text-dark);
+}
+
+.info-card p {
+    color: var(--color-text);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.btn-text {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.btn-text i {
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.btn-text:hover {
+    color: var(--color-primary-dark);
+}
+
+.btn-text:hover i {
+    transform: translateX(5px);
+}
+
+/* 即将达标项目部分 */
+.rwa-trending-section {
+    padding: 4rem 0;
+}
+
+.trending-projects-slider {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.trending-project-card {
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trending-project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.trending-project-card .project-image {
+    position: relative;
+    height: 150px;
+}
+
+.project-countdown {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    color: #fff;
+    padding: 1rem;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.project-countdown i {
+    margin-right: 0.5rem;
+    color: var(--color-accent);
+}
+
+.trending-project-card .project-info {
+    padding: 1rem;
+}
+
+.trending-project-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+.heat-meter.small {
+    margin-bottom: 0.8rem;
+}
+
+.heat-meter.small .heat-bar {
+    height: 6px;
+}
+
+.btn-sm {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+}
+
+/* 社区部分 */
+.rwa-community-section {
+    background: linear-gradient(135deg, var(--color-primary-dark), var(--color-accent));
+    padding: 4rem 0;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.rwa-community-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/grid-pattern.svg');
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.community-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.community-text {
+    flex: 1;
+}
+
+.community-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.community-text p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 500px;
+}
+
+.community-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.community-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.community-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+}
+
+/* 列表视图样式 */
+.rwa-projects-grid.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.rwa-projects-grid.list-view .rwa-project-card {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+.rwa-projects-grid.list-view .project-image {
+    width: 250px;
+    height: auto;
+    min-height: 100%;
+}
+
+.rwa-projects-grid.list-view .project-info {
+    flex: 1;
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+    .rwa-projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 992px) {
+    .community-content {
+        flex-direction: column;
+    }
+    
+    .community-image {
+        order: -1;
+    }
+    
+    .community-text {
+        text-align: center;
+    }
+    
+    .community-text p {
+        max-width: 100%;
+    }
+    
+    .community-buttons {
+        justify-content: center;
+    }
+    
+    .rwa-projects-grid.list-view .rwa-project-card {
+        flex-direction: column;
+    }
+    
+    .rwa-projects-grid.list-view .project-image {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .rwa-selection-header {
+        padding: 5rem 0 3rem;
+    }
+    
+    .rwa-selection-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .header-stats {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .stat-item {
+        min-width: 100px;
+        padding: 1rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .filter-options {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .filter-group {
+        width: 100%;
+    }
+    
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .rwa-projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .trending-projects-slider {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    .project-actions {
+        flex-direction: column;
+    }
+    
+    .trending-projects-slider {
+        grid-template-columns: 1fr;
+    }
+}

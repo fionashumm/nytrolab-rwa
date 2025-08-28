@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>公募区 - NytrolabRWA游戏众筹平台</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/public-offering.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span>NytrolabRWA</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="rwa-selection.html">待选项目</a></li>
+                <li><a href="public-offering.html" class="active">公募区</a></li>
+                <li><a href="premium.html">严选板块</a></li>
+                <li><a href="public-info.html">公开信息</a></li>
+                <li><a href="#" class="btn btn-primary">登录/注册</a></li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 页面头部 -->
+    <header class="page-header public-offering-header">
+        <div class="container">
+            <div class="header-content">
+                <h1>公募区</h1>
+                <p>这些项目已通过社区投票达标，正式进入众筹阶段。立即参与支持您喜爱的游戏项目！</p>
+                <div class="header-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">28</span>
+                        <span class="stat-label">进行中项目</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">¥12.6M</span>
+                        <span class="stat-label">已筹资金</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">18.5K</span>
+                        <span class="stat-label">支持者</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主要内容 -->
+    <main class="public-offering-main">
+        <div class="container">
+            <!-- 筛选和搜索部分 -->
+            <section class="filter-section">
+                <div class="search-box">
+                    <input type="text" placeholder="搜索项目名称、类型或开发团队...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="filters">
+                    <div class="filter-dropdown">
+                        <button class="btn-filter">项目类型 <i class="fas fa-chevron-down"></i></button>
+                        <div class="filter-menu">
+                            <div class="filter-group">
+                                <label>项目类型</label>
+                                <div class="filter-options">
+                                    <label><input type="checkbox" checked> 全部</label>
+                                    <label><input type="checkbox"> 角色扮演</label>
+                                    <label><input type="checkbox"> 动作冒险</label>
+                                    <label><input type="checkbox"> 策略</label>
+                                    <label><input type="checkbox"> 模拟经营</label>
+                                    <label><input type="checkbox"> 射击</label>
+                                    <label><input type="checkbox"> 休闲</label>
+                                    <label><input type="checkbox"> 卡牌</label>
+                                    <label><input type="checkbox"> 竞速</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-dropdown">
+                        <button class="btn-filter">众筹状态 <i class="fas fa-chevron-down"></i></button>
+                        <div class="filter-menu">
+                            <div class="filter-group">
+                                <label>众筹状态</label>
+                                <div class="filter-options">
+                                    <label><input type="checkbox" checked> 全部</label>
+                                    <label><input type="checkbox"> 进行中</label>
+                                    <label><input type="checkbox"> 即将结束</label>
+                                    <label><input type="checkbox"> 已成功</label>
+                                    <label><input type="checkbox"> 已结束</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-dropdown">
+                        <button class="btn-filter">排序方式 <i class="fas fa-chevron-down"></i></button>
+                        <div class="filter-menu">
+                            <div class="filter-group">
+                                <label>排序方式</label>
+                                <div class="filter-options">
+                                    <label><input type="radio" name="sort" checked> 最新上线</label>
+                                    <label><input type="radio" name="sort"> 筹款最多</label>
+                                    <label><input type="radio" name="sort"> 支持者最多</label>
+                                    <label><input type="radio" name="sort"> 即将结束</label>
+                                    <label><input type="radio" name="sort"> 完成度最高</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-toggle">
+                        <button class="btn-view active" data-view="grid"><i class="fas fa-th"></i></button>
+                        <button class="btn-view" data-view="list"><i class="fas fa-list"></i></button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 精选项目 -->
+            <section class="featured-projects">
+                <h2 class="section-title">精选项目</h2>
+                <div class="featured-slider">
+                    <div class="featured-project">
+                        <div class="featured-image">
+                            <img src="https://img.zcool.cn/community/01e3a45d3a1e6ea801209252f8e2f7.jpg@1280w_1l_2o_100sh.jpg" alt="星际探险">
+                            <div class="featured-badges">
+                                <span class="badge badge-featured">精选</span>
+                                <span class="badge badge-hot">热门</span>
+                            </div>
+                        </div>
+                        <div class="featured-content">
+                            <h3><a href="project-detail.html">星际探险：无尽宇宙</a></h3>
+                            <div class="project-meta">
+                                <span class="project-category">动作冒险</span>
+                                <span class="project-team">由 星辰工作室 开发</span>
+                            </div>
+                            <p class="project-desc">一款开放世界太空探险游戏，玩家将探索无尽宇宙，发现奇异星球，与外星文明互动，建立自己的星际帝国。</p>
+                            <div class="funding-progress">
+                                <div class="progress-stats">
+                                    <div class="stat">
+                                        <span class="amount">¥1,258,760</span>
+                                        <span class="label">已筹资金</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="percentage">84%</span>
+                                        <span class="label">已达目标</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="time">15天</span>
+                                        <span class="label">剩余时间</span>
+                                    </div>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 84%;"></div>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <a href="project-detail.html" class="btn btn-primary">立即支持</a>
+                                <button class="btn btn-outline"><i class="far fa-bookmark"></i> 收藏</button>
+                                <div class="backers-info">
+                                    <div class="backers-avatars">
+                                        <img src="https://img.zcool.cn/community/01f9c65d3a1e6ea801209252f8a3e7.jpg@400w_1l_2o_100sh.jpg" alt="支持者">
+                                        <img src="https://img.zcool.cn/community/0194de5d3a1e6ea801209252f8c5e7.jpg@400w_1l_2o_100sh.jpg" alt="支持者">
+                                        <img src="https://img.zcool.cn/community/01a2c25d3a1e6ea801209252f8d9c7.jpg@400w_1l_2o_100sh.jpg" alt="支持者">
+                                    </div>
+                                    <span>2,145 人已支持</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-controls">
+                        <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                        <div class="slider-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 项目列表 -->
+            <section class="projects-section">
+                <h2 class="section-title">所有项目</h2>
+                <div class="projects-grid">
+                    <!-- 项目卡片 1 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://img.zcool.cn/community/01f9c65d3a1e6ea801209252f8a3e7.jpg@1280w_1l_2o_100sh.jpg" alt="魔法世界">
+                            <div class="project-badges">
+                                <span class="badge badge-new">新上线</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3><a href="project-detail.html">魔法世界：元素觉醒</a></h3>
+                            <div class="project-meta">
+                                <span class="project-category">角色扮演</span>
+                                <span class="project-team">魔法石工作室</span>
+                            </div>
+                            <p class="project-desc">探索充满魔法元素的奇幻世界，掌握各种元素魔法，与神秘生物战斗，揭开世界的秘密。</p>
+                            <div class="funding-progress">
+                                <div class="progress-stats">
+                                    <div class="stat">
+                                        <span class="amount">¥568,320</span>
+                                        <span class="label">已筹资金</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="percentage">47%</span>
+                                        <span class="label">已达目标</span>
+                                    </div>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 47%;"></div>
+                                </div>
+                                <div class="time-left">
+                                    <i class="far fa-clock"></i> 剩余 25 天
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <a href="project-detail.html" class="btn btn-sm btn-primary">查看详情</a>
+                                <div class="backers">
+                                    <i class="fas fa-user"></i> 845 支持者
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 项目卡片 2 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://img.zcool.cn/community/0194de5d3a1e6ea801209252f8c5e7.jpg@1280w_1l_2o_100sh.jpg" alt="赛博朋克">
+                            <div class="project-badges">
+                                <span class="badge badge-hot">热门</span>
+                                <span class="badge badge-ending">即将结束</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3><a href="project-detail.html">赛博朋克：霓虹革命</a></h3>
+                            <div class="project-meta">
+                                <span class="project-category">动作角色</span>
+                                <span class="project-team">霓虹工作室</span>
+                            </div>
+                            <p class="project-desc">在一个高科技低生活的未来世界中，玩家将扮演一名赛博改造人，对抗巨型企业的统治。</p>
+                            <div class="funding-progress">
+                                <div class="progress-stats">
+                                    <div class="stat">
+                                        <span class="amount">¥1,875,420</span>
+                                        <span class="label">已筹资金</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="percentage">94%</span>
+                                        <span class="label">已达目标</span>
+                                    </div>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 94%;"></div>
+                                </div>
+                                <div class="time-left">
+                                    <i class="far fa-clock"></i> 剩余 3 天
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <a href="project-detail.html" class="btn btn-sm btn-primary">查看详情</a>
+                                <div class="backers">
+                                    <i class="fas fa-user"></i> 2,341 支持者
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 项目卡片 3 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://img.zcool.cn/community/01a2c25d3a1e6ea801209252f8d9c7.jpg@1280w_1l_2o_100sh.jpg" alt="农场模拟">
+                        </div>
+                        <div class="project-content">
+                            <h3><a href="project-detail.html">梦想农场：四季物语</a></h3>
+                            <div class="project-meta">
+                                <span class="project-category">模拟经营</span>
+                                <span class="project-team">四季工作室</span>
+                            </div>
+                            <p class="project-desc">经营自己的农场，种植作物，饲养动物，与村民互动，体验四季变化带来的不同挑战。</p>
+                            <div class="funding-progress">
+                                <div class="progress-stats">
+                                    <div class="stat">
+                                        <span class="amount">¥732,150</span>
+                                        <span class="label">已筹资金</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="percentage">73%</span>
+                                        <span class="label">已达目标</span>
+                                    </div>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 73%;"></div>
+                                </div>
+                                <div class="time-left">
+                                    <i class="far fa-clock"></i> 剩余 18 天
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <a href="project-detail.html" class="btn btn-sm btn-primary">查看详情</a>
+                                <div class="backers">
+                                    <i class="fas fa-user"></i> 1,256 支持者
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 项目卡片 4 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://i.imgur.com/RzHm8Vt.jpg" alt="战略指挥">
+                            <div class="project-badges">
+                                <span class="badge badge-success">已达标</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3><a href="project-detail.html">战略指挥：帝国崛起</a></h3>
+                            <div class="project-meta">
+                                <span class="project-category">策略</span>
+                                <span class="project-team">战略思维游戏</span>
+                            </div>
+                            <p class="project-desc">建立自己的帝国，发展科技，训练军队，与其他玩家或AI对抗，争夺世界霸权。</p>
+                            <div class="funding-progress">
+                                <div class="progress-stats">
+                                    <div class="stat">
+                                        <span class="amount">¥1,025,780</span>
+                                        <span class="label">已筹资金</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="percentage">102%</span>
+                                        <span class="label">已达目标</span>
+                                    </div>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress success" style="width: 102%;"></div>
+                                </div>
+                                <div class="time-left">
+                                    <i class="far fa-clock"></i> 剩余 12 天
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <a href="project-detail.html" class="btn btn-sm btn-primary">查看详情</a>
+                                <div class="backers">
+                                    <i class="fas fa-user"></i> 1,578 支持者
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 项目卡片 5 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://i.imgur.com/9XcXAiL.jpg" alt="音乐节奏">
+                        </div>
+                        <div class="project-content">
+                            <h3><a href="project-detail.html">节奏大师：音乐冒险</a></h3>
+                            <div class="project-meta">
+                                <span class="project-category">音乐节奏</span>
+                                <span class="project-team">音律工作室</span>
+                            </div>
+                            <p class="project-desc">一款结合音乐和冒险元素的节奏游戏，玩家需要跟随音乐节拍，完成各种挑战。</p>
+                            <div class="funding-progress">
+                                <div class="progress-stats">
+                                    <div class="stat">
+                                        <span class="amount">¥425,680</span>
+                                        <span class="label">已筹资金</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="percentage">42%</span>
+                                        <span class="label">已达目标</span>
+                                    </div>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 42%;"></div>
+                                </div>
+                                <div class="time-left">
+                                    <i class="far fa-clock"></i> 剩余 21 天
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <a href="project-detail.html" class="btn btn-sm btn-primary">查看详情</a>
+                                <div class="backers">
+                                    <i class="fas fa-user"></i> 764 支持者
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 项目卡片 6 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://i.imgur.com/dKvZGxS.jpg" alt="卡牌对战">
+                            <div class="project-badges">
+                                <span class="badge badge-trending">趋势</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3><a href="project-detail.html">卡牌对战：神话传说</a></h3>
+                            <div class="project-meta">
+                                <span class="project-category">卡牌</span>
+                                <span class="project-team">神话游戏</span>
+                            </div>
+                            <p class="project-desc">收集各种神话传说中的角色卡牌，组建自己的卡组，与其他玩家进行策略对战。</p>
+                            <div class="funding-progress">
+                                <div class="progress-stats">
+                                    <div class="stat">
+                                        <span class="amount">¥856,420</span>
+                                        <span class="label">已筹资金</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="percentage">85%</span>
+                                        <span class="label">已达目标</span>
+                                    </div>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%;"></div>
+                                </div>
+                                <div class="time-left">
+                                    <i class="far fa-clock"></i> 剩余 9 天
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <a href="project-detail.html" class="btn btn-sm btn-primary">查看详情</a>
+                                <div class="backers">
+                                    <i class="fas fa-user"></i> 1,342 支持者
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 加载更多按钮 -->
+                <div class="load-more">
+                    <button class="btn btn-outline btn-lg">加载更多项目</button>
+                </div>
+            </section>
+
+            <!-- 众筹指南 -->
+            <section class="funding-guide">
+                <h2 class="section-title">众筹参与指南</h2>
+                <div class="guide-cards">
+                    <div class="guide-card">
+                        <div class="guide-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>1. 浏览项目</h3>
+                        <p>浏览我们精心筛选的游戏项目，查看项目详情、开发团队背景和开发计划。</p>
+                    </div>
+                    <div class="guide-card">
+                        <div class="guide-icon">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                        <h3>2. 选择支持方案</h3>
+                        <p>每个项目提供多种支持方案，从象征性支持到限量收藏版，选择适合您的方案。</p>
+                    </div>
+                    <div class="guide-card">
+                        <div class="guide-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <h3>3. 安全支付</h3>
+                        <p>通过我们安全的支付系统完成支持，您的资金将被安全托管。</p>
+                    </div>
+                    <div class="guide-card">
+                        <div class="guide-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>4. 跟踪进度</h3>
+                        <p>在个人中心跟踪项目开发进度，接收开发团队的最新动态和更新。</p>
+                    </div>
+                </div>
+                <div class="guide-cta">
+                    <a href="#" class="btn btn-primary btn-lg">了解更多众筹规则</a>
+                </div>
+            </section>
+
+            <!-- 成功案例 -->
+            <section class="success-stories">
+                <h2 class="section-title">成功众筹案例</h2>
+                <div class="stories-slider">
+                    <div class="story-card">
+                        <div class="story-image">
+                            <img src="https://i.imgur.com/JQTXrG2.jpg" alt="成功案例">
+                        </div>
+                        <div class="story-content">
+                            <h3>《暗影猎人》</h3>
+                            <div class="story-stats">
+                                <div class="stat">
+                                    <span class="label">筹集金额</span>
+                                    <span class="value">¥2,580,000</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="label">支持人数</span>
+                                    <span class="value">3,245</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="label">完成度</span>
+                                    <span class="value">215%</span>
+                                </div>
+                            </div>
+                            <p>《暗影猎人》是一款动作角色扮演游戏，通过我们平台成功筹集了超过250万元资金，远超目标金额。游戏已于去年正式发布，获得了Steam平台"特别好评"评价。</p>
+                            <a href="#" class="btn btn-sm btn-outline">查看成功故事</a>
+                        </div>
+                    </div>
+                    <div class="slider-controls">
+                        <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                        <div class="slider-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 常见问题 -->
+            <section class="faq-section">
+                <h2 class="section-title">常见问题</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>如何确保我支持的项目能够成功开发完成？</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>我们对所有进入公募区的项目都有严格的审核流程，确保开发团队具备足够的技术能力和项目管理经验。此外，我们采用分阶段资金释放机制，开发团队需要达到预定的开发里程碑才能获得下一阶段的资金支持。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>如果项目众筹失败，我的资金会怎样处理？</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>如果项目未能在众筹期限内达到目标金额，所有支持者的资金将自动退回原支付账户，不会收取任何手续费。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>我可以修改或取消我的支持吗？</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>在众筹期间，您可以随时修改支持方案或取消支持。但一旦项目众筹成功并结束众筹期，支持将无法取消。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>我如何获得众筹奖励？</h3>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>众筹奖励将根据项目开发进度和奖励类型分阶段发放。数字奖励通常会通过您的账户直接发放，实物奖励则需要您在项目众筹成功后完善收货信息。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-more">
+                    <a href="#" class="btn btn-outline">查看更多问题</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 订阅区域 -->
+    <section class="subscribe-section">
+        <div class="container">
+            <div class="subscribe-content">
+                <h2>获取最新众筹项目通知</h2>
+                <p>订阅我们的通讯，第一时间获取新项目上线、限时优惠和独家内容。</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="输入您的邮箱地址">
+                    <button type="submit" class="btn btn-primary">订阅</button>
+                </form>
+                <div class="subscribe-note">
+                    <i class="fas fa-shield-alt"></i> 我们尊重您的隐私，绝不会分享您的信息。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span>NytrolabRWA</span>
+                    <p>连接游戏创作者与玩家的桥梁，让每个优秀的游戏创意都能得到支持。</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>浏览</h3>
+                        <ul>
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="rwa-selection.html">待选项目</a></li>
+                            <li><a href="public-offering.html">公募区</a></li>
+                            <li><a href="premium.html">严选板块</a></li>
+                            <li><a href="public-info.html">公开信息</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>关于</h3>
+                        <ul>
+                            <li><a href="#">关于我们</a></li>
+                            <li><a href="#">如何运作</a></li>
+                            <li><a href="#">常见问题</a></li>
+                            <li><a href="#">联系我们</a></li>
+                            <li><a href="#">加入团队</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>创作者</h3>
+                        <ul>
+                            <li><a href="#">提交项目</a></li>
+                            <li><a href="#">创作者指南</a></li>
+                            <li><a href="#">资源中心</a></li>
+                            <li><a href="#">成功案例</a></li>
+                            <li><a href="#">教程与帮助</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>法律</h3>
+                        <ul>
+                            <li><a href="#">服务条款</a></li>
+                            <li><a href="#">隐私政策</a></li>
+                            <li><a href="#">Cookie政策</a></li>
+                            <li><a href="#">知识产权</a></li>
+                            <li><a href="#">风险披露</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-weixin"></i></a>
+                    <a href="#"><i class="fab fa-weibo"></i></a>
+                    <a href="#"><i class="fab fa-qq"></i></a>
+                    <a href="#"><i class="fab fa-bilibili"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+                <div class="copyright">
+                     &copy; 2023 NytrolabRWA 游戏众筹平台. 保留所有权利。 | <a href="https://www.nytrolab.com" target="_blank">www.nytrolab.com</a>
+                 </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/public-offering.js"></script>
+</body>
+</html>
