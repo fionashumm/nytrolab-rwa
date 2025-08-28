@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWA待选板块 - NytrolabRWA游戏众筹平台</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rwa-selection.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                NytrolabRWA
+            </a>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="public-info.html">公开信息</a></li>
+                <li><a href="rwa-selection.html" class="active">RWA待选</a></li>
+                <li><a href="public-offering.html">公募区</a></li>
+                <li><a href="curated.html">严选板块</a></li>
+                <li><a href="#" class="btn btn-primary">登录/注册</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 页面头部 -->
+    <header class="page-header rwa-selection-header">
+        <div class="container">
+            <h1>RWA待选板块</h1>
+            <p>发现潜力游戏项目，关注热度上升的IP，参与投票推动优质项目进入公募</p>
+            <div class="header-stats">
+                <div class="stat-item">
+                    <span class="stat-number">127</span>
+                    <span class="stat-label">待选项目</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">18</span>
+                    <span class="stat-label">即将达标</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">42</span>
+                    <span class="stat-label">本月新增</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+        <section class="rwa-filter-section">
+            <div class="container">
+                <div class="filter-container">
+                    <div class="search-box">
+                        <input type="text" placeholder="搜索项目名称、开发商或关键词">
+                        <button type="button"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="filter-options">
+                        <div class="filter-group">
+                            <label>项目类型</label>
+                            <div class="filter-dropdown">
+                                <button class="btn-filter">全部类型 <i class="fas fa-chevron-down"></i></button>
+                                <div class="filter-menu">
+                                    <label><input type="checkbox" checked> 全部</label>
+                                    <label><input type="checkbox"> 角色扮演</label>
+                                    <label><input type="checkbox"> 动作冒险</label>
+                                    <label><input type="checkbox"> 策略</label>
+                                    <label><input type="checkbox"> 模拟经营</label>
+                                    <label><input type="checkbox"> 射击</label>
+                                    <label><input type="checkbox"> 休闲</label>
+                                    <label><input type="checkbox"> 卡牌</label>
+                                    <label><input type="checkbox"> 其他</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-group">
+                            <label>开发阶段</label>
+                            <div class="filter-dropdown">
+                                <button class="btn-filter">全部阶段 <i class="fas fa-chevron-down"></i></button>
+                                <div class="filter-menu">
+                                    <label><input type="checkbox" checked> 全部</label>
+                                    <label><input type="checkbox"> 概念阶段</label>
+                                    <label><input type="checkbox"> 原型开发</label>
+                                    <label><input type="checkbox"> Alpha测试</label>
+                                    <label><input type="checkbox"> Beta测试</label>
+                                    <label><input type="checkbox"> 完成度80%+</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-group">
+                            <label>热度排序</label>
+                            <div class="filter-dropdown">
+                                <button class="btn-filter">热度最高 <i class="fas fa-chevron-down"></i></button>
+                                <div class="filter-menu">
+                                    <label><input type="radio" name="sort" checked> 热度最高</label>
+                                    <label><input type="radio" name="sort"> 最新添加</label>
+                                    <label><input type="radio" name="sort"> 即将达标</label>
+                                    <label><input type="radio" name="sort"> 关注最多</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rwa-projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>热门待选项目</h2>
+                    <div class="view-toggle">
+                        <button class="btn-view active" data-view="grid"><i class="fas fa-th"></i></button>
+                        <button class="btn-view" data-view="list"><i class="fas fa-list"></i></button>
+                    </div>
+                </div>
+                
+                <div class="rwa-projects-grid">
+                    <!-- 项目卡片1 -->
+                    <div class="rwa-project-card">
+                        <div class="project-image">
+                            <img src="https://i.imgur.com/8dKNuQR.jpg" alt="星际探险">
+                            <div class="project-badges">
+                                <span class="badge badge-hot">热门</span>
+                                <span class="badge badge-new">新入驻</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3><a href="project-detail.html">星际探险</a></h3>
+                            <div class="project-meta">
+                                <span class="project-category">角色扮演</span>
+                                <span class="project-stage">Beta测试</span>
+                            </div>
+                            <p class="project-desc">一款开放世界太空探险RPG游戏，玩家将扮演星际探险家，探索未知星球，与外星文明互动。</p>
+                            <div class="project-stats">
+                                <div class="heat-meter">
+                                    <div class="heat-label">热度</div>
+                                    <div class="heat-bar">
+                                        <div class="heat-progress" style="width: 85%;"></div>
+                                    </div>
+                                    <div class="heat-percentage">85%</div>
+                                </div>
+                                <div class="project-data">
+                                    <div class="data-item">
+                                        <i class="fas fa-user"></i>
+                                        <span>3.2k 关注</span>
+                                    </div>
+                                    <div class="data-item">
+                                        <i class="fas fa-comment"></i>
+                                        <span>156 评论</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-outline"><i class="fas fa-heart"></i> 关注</button>
+                                <button class="btn btn-primary"><i class="fas fa-fire"></i> 投票支持</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 项目卡片2 -->
+                    <div class="rwa-project-card">
+                        <div class="project-image">
+                            <img src="https://i.imgur.com/fP3GHyU.jpg" alt="幻想世界">
+                            <div class="project-badges">
+                                <span class="badge badge-trending">趋势</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3><a href="project-detail.html">幻想世界</a></h3>
+                            <div class="project-meta">
+                                <span class="project-category">动作冒险</span>
+                                <span class="project-stage">Alpha测试</span>
+                            </div>
+                            <p class="project-desc">一款融合东方神话与西方奇幻元素的动作冒险游戏，玩家将在充满魔法的世界中展开冒险。</p>
+                            <div class="project-stats">
+                                <div class="heat-meter">
+                                    <div class="heat-label">热度</div>
+                                    <div class="heat-bar">
+                                        <div class="heat-progress" style="width: 72%;"></div>
+                                    </div>
+                                    <div class="heat-percentage">72%</div>
+                                </div>
+                                <div class="project-data">
+                                    <div class="data-item">
+                                        <i class="fas fa-user"></i>
+                                        <span>2.8k 关注</span>
+                                    </div>
+                                    <div class="data-item">
+                                        <i class="fas fa-comment"></i>
+                                        <span>124 评论</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-outline"><i class="fas fa-heart"></i> 关注</button>
+                                <button class="btn btn-primary"><i class="fas fa-fire"></i> 投票支持</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 项目卡片3 -->
+                    <div class="rwa-project-card">
+                        <div class="project-image">
+                            <img src="https://i.imgur.com/qLTHRNK.jpg" alt="机甲战士">
+                            <div class="project-badges">
+                                <span class="badge badge-almost">即将达标</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3><a href="project-detail.html">机甲战士</a></h3>
+                            <div class="project-meta">
+                                <span class="project-category">射击</span>
+                                <span class="project-stage">完成度80%+</span>
+                            </div>
+                            <p class="project-desc">一款未来科幻题材的机甲战斗游戏，玩家可以驾驶各种定制化机甲参与激烈的PVP和PVE战斗。</p>
+                            <div class="project-stats">
+                                <div class="heat-meter">
+                                    <div class="heat-label">热度</div>
+                                    <div class="heat-bar">
+                                        <div class="heat-progress" style="width: 93%;"></div>
+                                    </div>
+                                    <div class="heat-percentage">93%</div>
+                                </div>
+                                <div class="project-data">
+                                    <div class="data-item">
+                                        <i class="fas fa-user"></i>
+                                        <span>4.5k 关注</span>
+                                    </div>
+                                    <div class="data-item">
+                                        <i class="fas fa-comment"></i>
+                                        <span>218 评论</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-outline"><i class="fas fa-heart"></i> 关注</button>
+                                <button class="btn btn-primary"><i class="fas fa-fire"></i> 投票支持</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 项目卡片4 -->
+                    <div class="rwa-project-card">
+                        <div class="project-image">
+                            <img src="https://i.imgur.com/vXE2oUw.jpg" alt="农场物语">
+                            <div class="project-badges">
+                                <span class="badge badge-new">新入驻</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3><a href="project-detail.html">农场物语</a></h3>
+                            <div class="project-meta">
+                                <span class="project-category">模拟经营</span>
+                                <span class="project-stage">原型开发</span>
+                            </div>
+                            <p class="project-desc">一款轻松愉快的农场模拟经营游戏，玩家可以种植作物、饲养动物、与NPC互动，打造自己的理想农场。</p>
+                            <div class="project-stats">
+                                <div class="heat-meter">
+                                    <div class="heat-label">热度</div>
+                                    <div class="heat-bar">
+                                        <div class="heat-progress" style="width: 45%;"></div>
+                                    </div>
+                                    <div class="heat-percentage">45%</div>
+                                </div>
+                                <div class="project-data">
+                                    <div class="data-item">
+                                        <i class="fas fa-user"></i>
+                                        <span>1.7k 关注</span>
+                                    </div>
+                                    <div class="data-item">
+                                        <i class="fas fa-comment"></i>
+                                        <span>87 评论</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-outline"><i class="fas fa-heart"></i> 关注</button>
+                                <button class="btn btn-primary"><i class="fas fa-fire"></i> 投票支持</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 项目卡片5 -->
+                    <div class="rwa-project-card">
+                        <div class="project-image">
+                            <img src="https://i.imgur.com/L5TQgxd.jpg" alt="卡牌王国">
+                        </div>
+                        <div class="project-info">
+                            <h3><a href="project-detail.html">卡牌王国</a></h3>
+                            <div class="project-meta">
+                                <span class="project-category">卡牌</span>
+                                <span class="project-stage">Beta测试</span>
+                            </div>
+                            <p class="project-desc">一款策略性卡牌游戏，融合了收集、构筑和对战元素，拥有丰富的卡牌种类和多样的游戏模式。</p>
+                            <div class="project-stats">
+                                <div class="heat-meter">
+                                    <div class="heat-label">热度</div>
+                                    <div class="heat-bar">
+                                        <div class="heat-progress" style="width: 68%;"></div>
+                                    </div>
+                                    <div class="heat-percentage">68%</div>
+                                </div>
+                                <div class="project-data">
+                                    <div class="data-item">
+                                        <i class="fas fa-user"></i>
+                                        <span>2.3k 关注</span>
+                                    </div>
+                                    <div class="data-item">
+                                        <i class="fas fa-comment"></i>
+                                        <span>105 评论</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-outline"><i class="fas fa-heart"></i> 关注</button>
+                                <button class="btn btn-primary"><i class="fas fa-fire"></i> 投票支持</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 项目卡片6 -->
+                    <div class="rwa-project-card">
+                        <div class="project-image">
+                            <img src="https://i.imgur.com/RzHm8Vt.jpg" alt="城市建造者">
+                        </div>
+                        <div class="project-info">
+                            <h3><a href="project-detail.html">城市建造者</a></h3>
+                            <div class="project-meta">
+                                <span class="project-category">策略</span>
+                                <span class="project-stage">Alpha测试</span>
+                            </div>
+                            <p class="project-desc">一款城市建设与管理模拟游戏，玩家需要规划城市布局、管理资源、解决各种城市问题。</p>
+                            <div class="project-stats">
+                                <div class="heat-meter">
+                                    <div class="heat-label">热度</div>
+                                    <div class="heat-bar">
+                                        <div class="heat-progress" style="width: 58%;"></div>
+                                    </div>
+                                    <div class="heat-percentage">58%</div>
+                                </div>
+                                <div class="project-data">
+                                    <div class="data-item">
+                                        <i class="fas fa-user"></i>
+                                        <span>1.9k 关注</span>
+                                    </div>
+                                    <div class="data-item">
+                                        <i class="fas fa-comment"></i>
+                                        <span>92 评论</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-outline"><i class="fas fa-heart"></i> 关注</button>
+                                <button class="btn btn-primary"><i class="fas fa-fire"></i> 投票支持</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="view-more-container">
+                    <button class="btn btn-outline btn-large">加载更多项目</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="rwa-info-section">
+            <div class="container">
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>热度机制</h3>
+                        <p>项目热度由关注数、评论互动、投票支持等多维度数据综合计算。当项目热度达到95%时，将有机会进入公募区。</p>
+                        <a href="#" class="btn-text">了解更多 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-vote-yea"></i>
+                        </div>
+                        <h3>投票支持</h3>
+                        <p>每位用户每天有5次投票机会，投票将直接提升项目热度。投票支持的项目成功进入公募后，您将获得专属徽章。</p>
+                        <a href="#" class="btn-text">了解更多 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>社区参与</h3>
+                        <p>在项目详情页参与讨论，提供反馈和建议，与开发团队直接互动。高质量的互动将获得社区积分奖励。</p>
+                        <a href="#" class="btn-text">了解更多 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rwa-trending-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>即将达标项目</h2>
+                    <a href="#" class="btn-text">查看全部 <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="trending-projects-slider">
+                    <!-- 滑块项目1 -->
+                    <div class="trending-project-card">
+                        <div class="project-image">
+                            <img src="https://i.imgur.com/9XcXAiL.jpg" alt="龙之谷">
+                            <div class="project-countdown">
+                                <i class="fas fa-clock"></i> 预计3天达标
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>龙之谷</h3>
+                            <div class="heat-meter small">
+                                <div class="heat-bar">
+                                    <div class="heat-progress" style="width: 92%;"></div>
+                                </div>
+                                <div class="heat-percentage">92%</div>
+                            </div>
+                            <button class="btn btn-sm btn-primary">投票支持</button>
+                        </div>
+                    </div>
+
+                    <!-- 滑块项目2 -->
+                    <div class="trending-project-card">
+                        <div class="project-image">
+                            <img src="https://i.imgur.com/dKvZGxS.jpg" alt="荒野求生">
+                            <div class="project-countdown">
+                                <i class="fas fa-clock"></i> 预计5天达标
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>荒野求生</h3>
+                            <div class="heat-meter small">
+                                <div class="heat-bar">
+                                    <div class="heat-progress" style="width: 90%;"></div>
+                                </div>
+                                <div class="heat-percentage">90%</div>
+                            </div>
+                            <button class="btn btn-sm btn-primary">投票支持</button>
+                        </div>
+                    </div>
+
+                    <!-- 滑块项目3 -->
+                    <div class="trending-project-card">
+                        <div class="project-image">
+                            <img src="https://i.imgur.com/JQTXrG2.jpg" alt="未来都市">
+                            <div class="project-countdown">
+                                <i class="fas fa-clock"></i> 预计7天达标
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>未来都市</h3>
+                            <div class="heat-meter small">
+                                <div class="heat-bar">
+                                    <div class="heat-progress" style="width: 88%;"></div>
+                                </div>
+                                <div class="heat-percentage">88%</div>
+                            </div>
+                            <button class="btn btn-sm btn-primary">投票支持</button>
+                        </div>
+                    </div>
+
+                    <!-- 滑块项目4 -->
+                    <div class="trending-project-card">
+                        <div class="project-image">
+                            <img src="https://i.imgur.com/pSVVW7K.jpg" alt="海底探险">
+                            <div class="project-countdown">
+                                <i class="fas fa-clock"></i> 预计10天达标
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>海底探险</h3>
+                            <div class="heat-meter small">
+                                <div class="heat-bar">
+                                    <div class="heat-progress" style="width: 85%;"></div>
+                                </div>
+                                <div class="heat-percentage">85%</div>
+                            </div>
+                            <button class="btn btn-sm btn-primary">投票支持</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rwa-community-section">
+            <div class="container">
+                <div class="community-content">
+                    <div class="community-text">
+                        <h2>加入我们的社区</h2>
+                        <p>与其他游戏爱好者和投资者交流，获取最新项目动态，参与社区活动，赢取独家奖励。</p>
+                        <div class="community-buttons">
+                            <a href="#" class="btn btn-primary"><i class="fab fa-discord"></i> 加入Discord</a>
+                            <a href="#" class="btn btn-outline"><i class="fab fa-telegram"></i> 加入Telegram</a>
+                        </div>
+                    </div>
+                    <div class="community-image">
+                        <span class="community-icon"><i class="fas fa-users"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span>NytrolabRWA</span>
+                    <p>连接游戏创作者与投资者的桥梁</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>平台</h3>
+                        <ul>
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="public-info.html">公开信息</a></li>
+                            <li><a href="rwa-selection.html">RWA待选</a></li>
+                            <li><a href="public-offering.html">公募区</a></li>
+                            <li><a href="curated.html">严选板块</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>资源</h3>
+                        <ul>
+                            <li><a href="#">帮助中心</a></li>
+                            <li><a href="#">开发者指南</a></li>
+                            <li><a href="#">投资者教程</a></li>
+                            <li><a href="#">API文档</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>关于我们</h3>
+                        <ul>
+                            <li><a href="#">公司介绍</a></li>
+                            <li><a href="#">团队成员</a></li>
+                            <li><a href="#">加入我们</a></li>
+                            <li><a href="#">联系方式</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>订阅最新动态</h3>
+                    <p>获取最新项目和平台更新信息</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="您的邮箱地址">
+                        <button type="submit" class="btn btn-primary">订阅</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 游戏众筹平台. 保留所有权利.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">隐私政策</a>
+                    <a href="#">服务条款</a>
+                    <a href="#">Cookie设置</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/rwa-selection.js"></script>
+</body>
+</html>

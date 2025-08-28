@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>公开信息 - NytrolabRWA游戏众筹平台</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/public-info.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="index.html" class="logo">
+                    <span>NytrolabRWA</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="public-info.html" class="active">公开信息</a></li>
+                    <li><a href="rwa-candidates.html">RWA待选</a></li>
+                    <li><a href="public-offering.html">公募区</a></li>
+                    <li><a href="selected-projects.html">严选板块</a></li>
+                    <li><a href="community.html">社区</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="login.html" class="btn btn-outline">登录</a>
+                    <a href="register.html" class="btn btn-primary">注册</a>
+                </div>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面头部 -->
+    <header class="page-header">
+        <div class="container">
+            <h1>公开信息</h1>
+            <p>透明、公正的项目信息披露，让每一次投资决策更有信心</p>
+        </div>
+    </header>
+
+    <!-- 主要内容 -->
+    <main>
+        <!-- 信息分类导航 -->
+        <section class="info-nav">
+            <div class="container">
+                <ul class="info-tabs">
+                    <li><a href="#platform-info" class="active">平台公告</a></li>
+                    <li><a href="#project-updates">项目动态</a></li>
+                    <li><a href="#financial-reports">财务报告</a></li>
+                    <li><a href="#legal-docs">法律文件</a></li>
+                    <li><a href="#risk-disclosure">风险披露</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 平台公告 -->
+        <section id="platform-info" class="info-section active-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>平台公告</h2>
+                    <div class="section-actions">
+                        <div class="search-box">
+                            <input type="text" placeholder="搜索公告...">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="filter-dropdown">
+                            <button class="btn-filter">筛选 <i class="fas fa-chevron-down"></i></button>
+                            <div class="filter-menu">
+                                <label><input type="checkbox" checked> 全部</label>
+                                <label><input type="checkbox"> 重要公告</label>
+                                <label><input type="checkbox"> 活动通知</label>
+                                <label><input type="checkbox"> 规则更新</label>
+                                <label><input type="checkbox"> 其他</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="announcements-list">
+                    <!-- 置顶公告 -->
+                    <div class="announcement-item pinned">
+                        <div class="announcement-badge">置顶</div>
+                        <div class="announcement-content">
+                            <h3><a href="#">关于平台升级维护的通知</a></h3>
+                            <div class="announcement-meta">
+                                <span class="announcement-date"><i class="far fa-calendar-alt"></i> 2023-06-15</span>
+                                <span class="announcement-category important">重要公告</span>
+                            </div>
+                            <p>尊敬的用户，为提升平台服务质量，我们将于2023年6月20日凌晨2:00-6:00进行系统升级维护，期间平台将暂停访问。给您带来的不便，敬请谅解。</p>
+                            <div class="announcement-actions">
+                                <a href="#" class="btn-read-more">查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 普通公告 -->
+                    <div class="announcement-item">
+                        <div class="announcement-content">
+                            <h3><a href="#">《星际探险》项目成功达成众筹目标</a></h3>
+                            <div class="announcement-meta">
+                                <span class="announcement-date"><i class="far fa-calendar-alt"></i> 2023-06-10</span>
+                                <span class="announcement-category">项目动态</span>
+                            </div>
+                            <p>我们很高兴地宣布，《星际探险》项目已成功达成500万元众筹目标！感谢所有支持者的信任与参与，项目团队将按计划推进游戏开发，预计将于2024年Q2发布首个测试版本。</p>
+                            <div class="announcement-actions">
+                                <a href="#" class="btn-read-more">查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="announcement-item">
+                        <div class="announcement-content">
+                            <h3><a href="#">新用户注册奖励活动开启</a></h3>
+                            <div class="announcement-meta">
+                                <span class="announcement-date"><i class="far fa-calendar-alt"></i> 2023-06-05</span>
+                                <span class="announcement-category">活动通知</span>
+                            </div>
+                            <p>即日起至2023年7月5日，新注册用户完成实名认证并参与任意项目投资，即可获得价值100元的平台代金券，可用于后续项目投资抵扣。</p>
+                            <div class="announcement-actions">
+                                <a href="#" class="btn-read-more">查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="announcement-item">
+                        <div class="announcement-content">
+                            <h3><a href="#">关于调整项目审核标准的公告</a></h3>
+                            <div class="announcement-meta">
+                                <span class="announcement-date"><i class="far fa-calendar-alt"></i> 2023-05-28</span>
+                                <span class="announcement-category">规则更新</span>
+                            </div>
+                            <p>为进一步提升平台项目质量，保障投资者权益，平台将从2023年6月1日起调整项目审核标准，增加团队背景调查、技术可行性评估等环节，详情请查看公告全文。</p>
+                            <div class="announcement-actions">
+                                <a href="#" class="btn-read-more">查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="announcement-item">
+                        <div class="announcement-content">
+                            <h3><a href="#">《魔法学院》项目延期发布说明</a></h3>
+                            <div class="announcement-meta">
+                                <span class="announcement-date"><i class="far fa-calendar-alt"></i> 2023-05-20</span>
+                                <span class="announcement-category">项目动态</span>
+                            </div>
+                            <p>由于《魔法学院》项目在开发过程中遇到技术难题，经项目方与平台协商，决定将发布日期延后至2023年9月，项目方将在延期期间增加游戏内容并优化游戏体验，为此给支持者带来的不便，我们深表歉意。</p>
+                            <div class="announcement-actions">
+                                <a href="#" class="btn-read-more">查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="announcement-item">
+                        <div class="announcement-content">
+                            <h3><a href="#">平台用户满意度调查开启</a></h3>
+                            <div class="announcement-meta">
+                                <span class="announcement-date"><i class="far fa-calendar-alt"></i> 2023-05-15</span>
+                                <span class="announcement-category">活动通知</span>
+                            </div>
+                            <p>为了更好地了解用户需求，提升平台服务质量，我们诚邀您参与本次用户满意度调查。完成调查的用户将有机会获得限量版平台周边礼品。</p>
+                            <div class="announcement-actions">
+                                <a href="#" class="btn-read-more">查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 分页 -->
+                <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#" class="next"><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 项目动态 -->
+        <section id="project-updates" class="info-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>项目动态</h2>
+                    <div class="section-actions">
+                        <div class="search-box">
+                            <input type="text" placeholder="搜索项目...">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="filter-dropdown">
+                            <button class="btn-filter">项目类型 <i class="fas fa-chevron-down"></i></button>
+                            <div class="filter-menu">
+                                <label><input type="checkbox" checked> 全部</label>
+                                <label><input type="checkbox"> 角色扮演</label>
+                                <label><input type="checkbox"> 策略</label>
+                                <label><input type="checkbox"> 动作</label>
+                                <label><input type="checkbox"> 模拟</label>
+                                <label><input type="checkbox"> 其他</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects-updates-grid">
+                    <!-- 项目动态卡片 -->
+                    <div class="project-update-card">
+                        <div class="project-update-header">
+                            <img src="https://i.imgur.com/8dKNuQR.jpg" alt="星际探险">
+                            <div class="project-update-meta">
+                                <h3>星际探险</h3>
+                                <span class="update-date">2023-06-08</span>
+                            </div>
+                        </div>
+                        <div class="project-update-content">
+                            <h4>开发进度更新：宇宙飞船设计完成</h4>
+                            <p>我们很高兴地宣布，游戏中的主要交通工具——宇宙飞船的设计已经完成！这款飞船不仅外观炫酷，还具备多种功能模块，玩家可以根据自己的需求进行定制...</p>
+                            <a href="#" class="btn-read-more">查看完整更新</a>
+                        </div>
+                    </div>
+
+                    <div class="project-update-card">
+                        <div class="project-update-header">
+                            <img src="https://i.imgur.com/fP3GHyU.jpg" alt="魔法学院">
+                            <div class="project-update-meta">
+                                <h3>魔法学院</h3>
+                                <span class="update-date">2023-06-05</span>
+                            </div>
+                        </div>
+                        <div class="project-update-content">
+                            <h4>技术难题突破：魔法特效系统优化</h4>
+                            <p>经过团队的不懈努力，我们终于解决了魔法特效系统的性能问题。现在，即使在低配置设备上，玩家也能体验到华丽的魔法效果，而不会出现卡顿现象...</p>
+                            <a href="#" class="btn-read-more">查看完整更新</a>
+                        </div>
+                    </div>
+
+                    <div class="project-update-card">
+                        <div class="project-update-header">
+                            <img src="https://i.imgur.com/qLTHRNK.jpg" alt="幻想世界">
+                            <div class="project-update-meta">
+                                <h3>幻想世界</h3>
+                                <span class="update-date">2023-06-02</span>
+                            </div>
+                        </div>
+                        <div class="project-update-content">
+                            <h4>新增职业：暗影刺客</h4>
+                            <p>应玩家要求，我们决定在游戏中新增"暗影刺客"职业。这一职业擅长隐身和暴击，适合喜欢高风险高回报玩法的玩家。我们已完成该职业的基础技能设计...</p>
+                            <a href="#" class="btn-read-more">查看完整更新</a>
+                        </div>
+                    </div>
+
+                    <div class="project-update-card">
+                        <div class="project-update-header">
+                            <img src="https://i.imgur.com/vXE2oUw.jpg" alt="机甲战士">
+                            <div class="project-update-meta">
+                                <h3>机甲战士</h3>
+                                <span class="update-date">2023-05-30</span>
+                            </div>
+                        </div>
+                        <div class="project-update-content">
+                            <h4>封闭测试反馈与改进计划</h4>
+                            <p>我们刚刚完成了为期一周的封闭测试，收集到了大量宝贵的玩家反馈。根据反馈，我们将对机甲操控系统进行优化，并调整部分武器的平衡性...</p>
+                            <a href="#" class="btn-read-more">查看完整更新</a>
+                        </div>
+                    </div>
+
+                    <div class="project-update-card">
+                        <div class="project-update-header">
+                            <img src="https://i.imgur.com/L5TQgxd.jpg" alt="海底冒险">
+                            <div class="project-update-meta">
+                                <h3>海底冒险</h3>
+                                <span class="update-date">2023-05-25</span>
+                            </div>
+                        </div>
+                        <div class="project-update-content">
+                            <h4>概念艺术展示：深海生物设计</h4>
+                            <p>今天我们想与大家分享游戏中的深海生物设计概念图。我们的艺术团队参考了真实的海洋生物，并融入了奇幻元素，创造出了独特而神秘的海底世界...</p>
+                            <a href="#" class="btn-read-more">查看完整更新</a>
+                        </div>
+                    </div>
+
+                    <div class="project-update-card">
+                        <div class="project-update-header">
+                            <img src="https://i.imgur.com/JQTXrG2.jpg" alt="战国志">
+                            <div class="project-update-meta">
+                                <h3>战国志</h3>
+                                <span class="update-date">2023-05-20</span>
+                            </div>
+                        </div>
+                        <div class="project-update-content">
+                            <h4>音乐制作进展：古风配乐完成</h4>
+                            <p>游戏的主要配乐已经完成！我们邀请了知名古风音乐人参与创作，为游戏打造了一系列具有浓厚东方韵味的背景音乐，让玩家在游戏中感受到更加沉浸的氛围...</p>
+                            <a href="#" class="btn-read-more">查看完整更新</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 查看更多按钮 -->
+                <div class="view-more-container">
+                    <button class="btn btn-outline btn-lg">加载更多</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 财务报告 -->
+        <section id="financial-reports" class="info-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>财务报告</h2>
+                    <div class="section-actions">
+                        <div class="year-selector">
+                            <label for="report-year">选择年份：</label>
+                            <select id="report-year">
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reports-list">
+                    <div class="report-item">
+                        <div class="report-icon">
+                            <i class="far fa-file-pdf"></i>
+                        </div>
+                        <div class="report-info">
+                            <h3>2023年第一季度财务报告</h3>
+                            <div class="report-meta">
+                                <span><i class="far fa-calendar-alt"></i> 发布日期：2023-04-15</span>
+                                <span><i class="fas fa-file-alt"></i> PDF文件 - 2.5MB</span>
+                            </div>
+                            <p>本报告包含2023年1月至3月平台运营数据、项目融资情况及财务状况分析。</p>
+                        </div>
+                        <div class="report-actions">
+                            <a href="#" class="btn btn-outline"><i class="fas fa-download"></i> 下载</a>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> 在线查看</a>
+                        </div>
+                    </div>
+
+                    <div class="report-item">
+                        <div class="report-icon">
+                            <i class="far fa-file-pdf"></i>
+                        </div>
+                        <div class="report-info">
+                            <h3>2022年第四季度财务报告</h3>
+                            <div class="report-meta">
+                                <span><i class="far fa-calendar-alt"></i> 发布日期：2023-01-20</span>
+                                <span><i class="fas fa-file-alt"></i> PDF文件 - 3.1MB</span>
+                            </div>
+                            <p>本报告包含2022年10月至12月平台运营数据、项目融资情况及财务状况分析。</p>
+                        </div>
+                        <div class="report-actions">
+                            <a href="#" class="btn btn-outline"><i class="fas fa-download"></i> 下载</a>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> 在线查看</a>
+                        </div>
+                    </div>
+
+                    <div class="report-item">
+                        <div class="report-icon">
+                            <i class="far fa-file-pdf"></i>
+                        </div>
+                        <div class="report-info">
+                            <h3>2022年第三季度财务报告</h3>
+                            <div class="report-meta">
+                                <span><i class="far fa-calendar-alt"></i> 发布日期：2022-10-18</span>
+                                <span><i class="fas fa-file-alt"></i> PDF文件 - 2.8MB</span>
+                            </div>
+                            <p>本报告包含2022年7月至9月平台运营数据、项目融资情况及财务状况分析。</p>
+                        </div>
+                        <div class="report-actions">
+                            <a href="#" class="btn btn-outline"><i class="fas fa-download"></i> 下载</a>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> 在线查看</a>
+                        </div>
+                    </div>
+
+                    <div class="report-item">
+                        <div class="report-icon">
+                            <i class="far fa-file-pdf"></i>
+                        </div>
+                        <div class="report-info">
+                            <h3>2022年第二季度财务报告</h3>
+                            <div class="report-meta">
+                                <span><i class="far fa-calendar-alt"></i> 发布日期：2022-07-15</span>
+                                <span><i class="fas fa-file-alt"></i> PDF文件 - 2.7MB</span>
+                            </div>
+                            <p>本报告包含2022年4月至6月平台运营数据、项目融资情况及财务状况分析。</p>
+                        </div>
+                        <div class="report-actions">
+                            <a href="#" class="btn btn-outline"><i class="fas fa-download"></i> 下载</a>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> 在线查看</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 法律文件 -->
+        <section id="legal-docs" class="info-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>法律文件</h2>
+                    <div class="section-actions">
+                        <div class="category-tabs">
+                            <button class="tab-btn active">用户协议</button>
+                            <button class="tab-btn">隐私政策</button>
+                            <button class="tab-btn">投资协议</button>
+                            <button class="tab-btn">其他文件</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="legal-docs-container">
+                    <div class="legal-doc-list active">
+                        <div class="legal-doc-item">
+                            <div class="doc-icon">
+                                <i class="fas fa-file-contract"></i>
+                            </div>
+                            <div class="doc-info">
+                                <h3>用户服务协议 <span class="version">v3.2</span></h3>
+                                <div class="doc-meta">
+                                    <span><i class="far fa-calendar-alt"></i> 更新日期：2023-05-10</span>
+                                    <span><i class="fas fa-file-alt"></i> PDF文件 - 1.2MB</span>
+                                </div>
+                                <p>本协议规定了用户在使用平台服务时的权利和义务，以及平台的责任范围。</p>
+                                <div class="update-note">
+                                    <strong>更新说明：</strong> 增加了关于用户内容版权保护的条款，明确了用户创作内容的权利归属。
+                                </div>
+                            </div>
+                            <div class="doc-actions">
+                                <a href="#" class="btn btn-outline"><i class="fas fa-download"></i> 下载</a>
+                                <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> 在线查看</a>
+                            </div>
+                        </div>
+
+                        <div class="legal-doc-item">
+                            <div class="doc-icon">
+                                <i class="fas fa-file-contract"></i>
+                            </div>
+                            <div class="doc-info">
+                                <h3>用户服务协议 <span class="version">v3.1</span></h3>
+                                <div class="doc-meta">
+                                    <span><i class="far fa-calendar-alt"></i> 更新日期：2023-01-15</span>
+                                    <span><i class="fas fa-file-alt"></i> PDF文件 - 1.1MB</span>
+                                </div>
+                                <p>本协议规定了用户在使用平台服务时的权利和义务，以及平台的责任范围。</p>
+                                <div class="update-note">
+                                    <strong>更新说明：</strong> 修订了争议解决机制，增加了在线调解选项。
+                                </div>
+                            </div>
+                            <div class="doc-actions">
+                                <a href="#" class="btn btn-outline"><i class="fas fa-download"></i> 下载</a>
+                                <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> 在线查看</a>
+                            </div>
+                        </div>
+
+                        <div class="legal-doc-item">
+                            <div class="doc-icon">
+                                <i class="fas fa-file-contract"></i>
+                            </div>
+                            <div class="doc-info">
+                                <h3>用户服务协议 <span class="version">v3.0</span></h3>
+                                <div class="doc-meta">
+                                    <span><i class="far fa-calendar-alt"></i> 更新日期：2022-09-20</span>
+                                    <span><i class="fas fa-file-alt"></i> PDF文件 - 1.0MB</span>
+                                </div>
+                                <p>本协议规定了用户在使用平台服务时的权利和义务，以及平台的责任范围。</p>
+                                <div class="update-note">
+                                    <strong>更新说明：</strong> 全面修订协议内容，使其更加清晰易懂，并符合最新法律法规要求。
+                                </div>
+                            </div>
+                            <div class="doc-actions">
+                                <a href="#" class="btn btn-outline"><i class="fas fa-download"></i> 下载</a>
+                                <a href="#" class="btn btn-primary"><i class="fas fa-eye"></i> 在线查看</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 风险披露 -->
+        <section id="risk-disclosure" class="info-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>风险披露</h2>
+                </div>
+
+                <div class="risk-disclosure-content">
+                    <div class="risk-warning">
+                        <div class="warning-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="warning-text">
+                            <h3>投资风险提示</h3>
+                            <p>众筹投资存在风险，投资需谨慎。在做出投资决策前，请务必仔细阅读项目信息，评估自身风险承受能力。</p>
+                        </div>
+                    </div>
+
+                    <div class="risk-categories">
+                        <div class="risk-category">
+                            <h3><i class="fas fa-project-diagram"></i> 项目风险</h3>
+                            <ul>
+                                <li>项目可能无法按计划完成开发</li>
+                                <li>最终产品可能与预期效果存在差异</li>
+                                <li>项目团队可能面临人员变动或管理问题</li>
+                                <li>技术实现可能遇到难以克服的障碍</li>
+                                <li>市场环境变化可能影响项目商业价值</li>
+                            </ul>
+                        </div>
+
+                        <div class="risk-category">
+                            <h3><i class="fas fa-chart-line"></i> 财务风险</h3>
+                            <ul>
+                                <li>投资可能无法获得预期回报</li>
+                                <li>项目可能出现资金链断裂情况</li>
+                                <li>项目方可能无法有效管理资金</li>
+                                <li>项目收益可能低于市场平均水平</li>
+                                <li>投资周期可能长于预期</li>
+                            </ul>
+                        </div>
+
+                        <div class="risk-category">
+                            <h3><i class="fas fa-gavel"></i> 法律风险</h3>
+                            <ul>
+                                <li>项目可能涉及知识产权纠纷</li>
+                                <li>监管政策变化可能影响项目运营</li>
+                                <li>合同条款可能存在争议解释空间</li>
+                                <li>跨境项目可能面临多重法律管辖</li>
+                                <li>项目方可能违反合同约定</li>
+                            </ul>
+                        </div>
+
+                        <div class="risk-category">
+                            <h3><i class="fas fa-globe"></i> 市场风险</h3>
+                            <ul>
+                                <li>市场竞争可能超出预期</li>
+                                <li>用户需求可能发生变化</li>
+                                <li>新技术出现可能导致项目过时</li>
+                                <li>行业趋势变化可能影响项目价值</li>
+                                <li>宏观经济环境变化可能影响投资回报</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="risk-management">
+                        <h3>平台风险管理措施</h3>
+                        <div class="measures-grid">
+                            <div class="measure-item">
+                                <div class="measure-icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div class="measure-content">
+                                    <h4>项目审核</h4>
+                                    <p>平台对所有项目进行严格审核，包括团队背景调查、商业计划评估、技术可行性分析等，确保项目具备基本可行性。</p>
+                                </div>
+                            </div>
+
+                            <div class="measure-item">
+                                <div class="measure-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="measure-content">
+                                    <h4>资金监管</h4>
+                                    <p>平台采用第三方资金托管机制，确保众筹资金专款专用，并根据项目进度分阶段释放资金，降低资金滥用风险。</p>
+                                </div>
+                            </div>
+
+                            <div class="measure-item">
+                                <div class="measure-icon">
+                                    <i class="fas fa-file-signature"></i>
+                                </div>
+                                <div class="measure-content">
+                                    <h4>合同保障</h4>
+                                    <p>平台提供标准化的投资协议，明确各方权利义务，并设立争议解决机制，保障投资者合法权益。</p>
+                                </div>
+                            </div>
+
+                            <div class="measure-item">
+                                <div class="measure-icon">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                                <div class="measure-content">
+                                    <h4>进度监控</h4>
+                                    <p>平台要求项目方定期发布进度报告，并由平台专业团队进行评估，确保项目按计划推进，及时发现并解决问题。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="investor-guide">
+                        <h3>投资者自我保护指南</h3>
+                        <ol>
+                            <li><strong>分散投资：</strong>不要将所有资金投入单一项目，适当分散投资可以降低风险。</li>
+                            <li><strong>了解项目：</strong>投资前详细了解项目背景、团队经验、技术可行性和市场前景。</li>
+                            <li><strong>评估风险：</strong>根据自身风险承受能力，选择适合的投资项目和金额。</li>
+                            <li><strong>关注进度：</strong>定期查看项目更新，了解项目进展情况。</li>
+                            <li><strong>提出问题：</strong>对项目有疑问时，及时在项目页面提问或联系平台客服。</li>
+                        </ol>
+                    </div>
+
+                    <div class="risk-documents">
+                        <h3>详细风险说明文件</h3>
+                        <div class="documents-list">
+                            <a href="#" class="document-link">
+                                <i class="far fa-file-pdf"></i>
+                                <span>《投资风险详细说明》</span>
+                            </a>
+                            <a href="#" class="document-link">
+                                <i class="far fa-file-pdf"></i>
+                                <span>《游戏项目投资特殊风险提示》</span>
+                            </a>
+                            <a href="#" class="document-link">
+                                <i class="far fa-file-pdf"></i>
+                                <span>《IP项目投资风险分析》</span>
+                            </a>
+                            <a href="#" class="document-link">
+                                <i class="far fa-file-pdf"></i>
+                                <span>《众筹投资者权益保护指南》</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span>NytrolabRWA</span>
+                    <p>连接游戏创作者与投资者的桥梁</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>平台导航</h3>
+                        <ul>
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="public-info.html">公开信息</a></li>
+                            <li><a href="rwa-candidates.html">RWA待选</a></li>
+                            <li><a href="public-offering.html">公募区</a></li>
+                            <li><a href="selected-projects.html">严选板块</a></li>
+                            <li><a href="community.html">社区</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>关于我们</h3>
+                        <ul>
+                            <li><a href="#">平台介绍</a></li>
+                            <li><a href="#">团队成员</a></li>
+                            <li><a href="#">发展历程</a></li>
+                            <li><a href="#">新闻报道</a></li>
+                            <li><a href="#">加入我们</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>帮助中心</h3>
+                        <ul>
+                            <li><a href="#">常见问题</a></li>
+                            <li><a href="#">投资指南</a></li>
+                            <li><a href="#">项目提交</a></li>
+                            <li><a href="#">安全保障</a></li>
+                            <li><a href="#">联系客服</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>关注我们</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-weixin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-weibo"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-qq"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        </div>
+                        <div class="app-download">
+                            <p>下载APP</p>
+                            <img src="https://i.imgur.com/dKvZGxS.jpg" alt="APP下载二维码">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                     &copy; 2023 NytrolabRWA 游戏众筹平台 版权所有 | <a href="https://www.nytrolab.com" target="_blank">www.nytrolab.com</a>
+                 </div>
+                <div class="footer-bottom-links">
+                    <a href="#">用户协议</a>
+                    <a href="#">隐私政策</a>
+                    <a href="#">免责声明</a>
+                    <a href="#">风险提示</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/public-info.js"></script>
+</body>
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NytrolabRWA - 游戏项目众筹平台</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">NytrolabRWA</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">首页</a></li>
+                    <li><a href="public-info.html">公开信息</a></li>
+                    <li><a href="rwa-selection.html">RWA待选</a></li>
+                    <li><a href="public-offering.html">公募区</a></li>
+                    <li><a href="curated.html">严选板块</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <a href="#" class="btn btn-secondary">登录</a>
+                <a href="#" class="btn btn-primary">注册</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 英雄区域 -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>发现并支持最具潜力的游戏项目</h1>
+                <p>NytrolabRWA是一个专注于游戏项目及IP项目的RWA众筹平台，连接创作者与投资者，共同打造游戏产业的未来。</p>
+                <div class="hero-buttons">
+                    <a href="#featured-projects" class="btn btn-primary btn-large">探索项目</a>
+                    <a href="#" class="btn btn-secondary btn-large">发起项目</a>
+                </div>
+            </div>
+        </div>
+        <!-- 黑神话：悟空轮播图 -->
+        <div class="wukong-slider">
+            <div class="wukong-slides">
+                <div class="wukong-slide active">
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/2358720/ss_d4e2d5e7e3f5b3e0d6a5e6b7a7a8a9a0a1a2a3a4.jpg" alt="黑神话：悟空宣传图1">
+                </div>
+                <div class="wukong-slide">
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/2358720/ss_c1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0.jpg" alt="黑神话：悟空宣传图2">
+                </div>
+                <div class="wukong-slide">
+                    <img src="https://cdn.akamai.steamstatic.com/steam/apps/2358720/ss_a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0.jpg" alt="黑神话：悟空宣传图3">
+                </div>
+            </div>
+            <div class="wukong-slider-controls">
+                <button class="wukong-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="wukong-dots">
+                    <span class="wukong-dot active" data-slide="0"></span>
+                    <span class="wukong-dot" data-slide="1"></span>
+                    <span class="wukong-dot" data-slide="2"></span>
+                </div>
+                <button class="wukong-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 热门项目 -->
+    <section id="featured-projects" class="featured-projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>热门项目</h2>
+                <a href="#" class="view-all">查看全部 <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="projects-grid">
+                <!-- 项目卡片 1 -->
+                <div class="project-card">
+                    <div class="project-thumbnail">
+                        <img src="https://cdn.akamai.steamstatic.com/steam/apps/2358720/ss_c1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0.jpg" alt="项目缩略图">
+                        <div class="project-category game">游戏</div>
+                    </div>
+                    <div class="project-info">
+                        <h3><a href="project-detail.html">星际探险：无尽边界</a></h3>
+                        <p class="project-desc">一款开放世界太空探索游戏，玩家可以探索无尽的星系和行星。</p>
+                        <div class="project-meta">
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%;"></div>
+                                </div>
+                                <div class="funding-stats">
+                                    <span class="funded">¥750,000</span>
+                                    <span class="goal">目标: ¥1,000,000</span>
+                                </div>
+                            </div>
+                            <div class="project-time-left">
+                                <i class="far fa-clock"></i> 剩余15天
+                            </div>
+                        </div>
+                        <div class="project-popularity">
+                            <span class="heat-index"><i class="fas fa-fire"></i> 热度: 95</span>
+                            <span class="backers"><i class="fas fa-user-friends"></i> 支持者: 1,250</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目卡片 2 -->
+                <div class="project-card">
+                    <div class="project-thumbnail">
+                        <img src="https://img.zcool.cn/community/0194de5d3a1e6ea801209252f8c5e7.jpg@1280w_1l_2o_100sh.jpg" alt="项目缩略图">
+                        <div class="project-category ip">IP</div>
+                    </div>
+                    <div class="project-info">
+                        <h3><a href="project-detail.html">龙族传说：动画系列</a></h3>
+                        <p class="project-desc">基于畅销小说《龙族》改编的高质量动画系列，将东方奇幻带入全球视野。</p>
+                        <div class="project-meta">
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 40%;"></div>
+                                </div>
+                                <div class="funding-stats">
+                                    <span class="funded">¥2,000,000</span>
+                                    <span class="goal">目标: ¥5,000,000</span>
+                                </div>
+                            </div>
+                            <div class="project-time-left">
+                                <i class="far fa-clock"></i> 剩余30天
+                            </div>
+                        </div>
+                        <div class="project-popularity">
+                            <span class="heat-index"><i class="fas fa-fire"></i> 热度: 88</span>
+                            <span class="backers"><i class="fas fa-user-friends"></i> 支持者: 850</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目卡片 3 -->
+                <div class="project-card">
+                    <div class="project-thumbnail">
+                        <img src="https://img.zcool.cn/community/01a2c25d3a1e6ea801209252f8d9c7.jpg@1280w_1l_2o_100sh.jpg" alt="项目缩略图">
+                        <div class="project-category game">游戏</div>
+                    </div>
+                    <div class="project-info">
+                        <h3><a href="project-detail.html">幻想世界：重生</a></h3>
+                        <p class="project-desc">一款MMORPG游戏，玩家可以在奇幻世界中冒险，体验独特的职业系统和社交互动。</p>
+                        <div class="project-meta">
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%;"></div>
+                                </div>
+                                <div class="funding-stats">
+                                    <span class="funded">¥4,500,000</span>
+                                    <span class="goal">目标: ¥5,000,000</span>
+                                </div>
+                            </div>
+                            <div class="project-time-left">
+                                <i class="far fa-clock"></i> 剩余5天
+                            </div>
+                        </div>
+                        <div class="project-popularity">
+                            <span class="heat-index"><i class="fas fa-fire"></i> 热度: 97</span>
+                            <span class="backers"><i class="fas fa-user-friends"></i> 支持者: 3,200</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分类浏览 -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>按类别浏览</h2>
+            </div>
+            <div class="categories-grid">
+                <a href="#" class="category-item">
+                    <div class="category-icon"><i class="fas fa-gamepad"></i></div>
+                    <h3>角色扮演</h3>
+                </a>
+                <a href="#" class="category-item">
+                    <div class="category-icon"><i class="fas fa-chess"></i></div>
+                    <h3>策略游戏</h3>
+                </a>
+                <a href="#" class="category-item">
+                    <div class="category-icon"><i class="fas fa-fist-raised"></i></div>
+                    <h3>动作冒险</h3>
+                </a>
+                <a href="#" class="category-item">
+                    <div class="category-icon"><i class="fas fa-film"></i></div>
+                    <h3>游戏IP</h3>
+                </a>
+                <a href="#" class="category-item">
+                    <div class="category-icon"><i class="fas fa-vr-cardboard"></i></div>
+                    <h3>VR/AR</h3>
+                </a>
+                <a href="#" class="category-item">
+                    <div class="category-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>移动游戏</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 即将结束的项目 -->
+    <section class="ending-soon">
+        <div class="container">
+            <div class="section-header">
+                <h2>即将结束</h2>
+                <a href="#" class="view-all">查看全部 <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="projects-grid">
+                <!-- 项目卡片 1 -->
+                <div class="project-card">
+                    <div class="project-thumbnail">
+                        <img src="https://img.zcool.cn/community/01e3a45d3a1e6ea801209252f8e2f7.jpg@1280w_1l_2o_100sh.jpg" alt="项目缩略图">
+                        <div class="project-category game">游戏</div>
+                        <div class="ending-badge">仅剩2天</div>
+                    </div>
+                    <div class="project-info">
+                        <h3><a href="project-detail.html">机甲战士：未来战场</a></h3>
+                        <p class="project-desc">一款机甲题材的战术射击游戏，玩家可以自定义机甲并参与激烈的团队战斗。</p>
+                        <div class="project-meta">
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 95%;"></div>
+                                </div>
+                                <div class="funding-stats">
+                                    <span class="funded">¥950,000</span>
+                                    <span class="goal">目标: ¥1,000,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-popularity">
+                            <span class="heat-index"><i class="fas fa-fire"></i> 热度: 92</span>
+                            <span class="backers"><i class="fas fa-user-friends"></i> 支持者: 1,800</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目卡片 2 -->
+                <div class="project-card">
+                    <div class="project-thumbnail">
+                        <img src="https://img.zcool.cn/community/01f9c65d3a1e6ea801209252f8a3e7.jpg@1280w_1l_2o_100sh.jpg" alt="项目缩略图">
+                        <div class="project-category ip">IP</div>
+                        <div class="ending-badge">仅剩3天</div>
+                    </div>
+                    <div class="project-info">
+                        <h3><a href="project-detail.html">魔法学院：桌游系列</a></h3>
+                        <p class="project-desc">基于热门小说《魔法学院》改编的桌游系列，包含卡牌游戏和角色扮演元素。</p>
+                        <div class="project-meta">
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%;"></div>
+                                </div>
+                                <div class="funding-stats">
+                                    <span class="funded">¥425,000</span>
+                                    <span class="goal">目标: ¥500,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-popularity">
+                            <span class="heat-index"><i class="fas fa-fire"></i> 热度: 89</span>
+                            <span class="backers"><i class="fas fa-user-friends"></i> 支持者: 950</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 社区活动 -->
+    <section class="community">
+        <div class="container">
+            <div class="section-header">
+                <h2>社区活动</h2>
+                <a href="#" class="view-all">查看全部 <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="community-grid">
+                <div class="community-card">
+                    <div class="community-image">
+                        <img src="https://img.zcool.cn/community/01a2c25d3a1e6ea801209252f8d9c7.jpg@1280w_1l_2o_100sh.jpg" alt="社区活动">
+                    </div>
+                    <div class="community-info">
+                        <h3>游戏开发者线上交流会</h3>
+                        <p class="community-date"><i class="far fa-calendar-alt"></i> 2023年8月15日</p>
+                        <p class="community-desc">与行业专家和其他开发者交流，分享游戏开发经验和创新思路。</p>
+                        <a href="#" class="btn btn-secondary">了解详情</a>
+                    </div>
+                </div>
+                <div class="community-card">
+                    <div class="community-image">
+                        <img src="https://img.zcool.cn/community/0194de5d3a1e6ea801209252f8c5e7.jpg@1280w_1l_2o_100sh.jpg" alt="社区活动">
+                    </div>
+                    <div class="community-info">
+                        <h3>IP授权与变现策略研讨会</h3>
+                        <p class="community-date"><i class="far fa-calendar-alt"></i> 2023年8月22日</p>
+                        <p class="community-desc">探讨游戏IP的授权模式、跨界合作及变现策略，助力IP价值最大化。</p>
+                        <a href="#" class="btn btn-secondary">了解详情</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 成功案例 -->
+    <section class="success-stories">
+        <div class="container">
+            <div class="section-header">
+                <h2>成功案例</h2>
+            </div>
+            <div class="stories-slider">
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="https://img.zcool.cn/community/01e3a45d3a1e6ea801209252f8e2f7.jpg@1280w_1l_2o_100sh.jpg" alt="成功案例">
+                    </div>
+                    <div class="story-content">
+                        <h3>《暗影猎人》</h3>
+                        <p class="story-stats">筹集金额: ¥8,500,000 | 支持者: 12,000+</p>
+                        <p class="story-desc">从众筹项目到Steam热销游戏，《暗影猎人》成功打造了独立游戏的传奇之路。</p>
+                        <a href="#" class="btn btn-text">阅读完整故事 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 订阅区域 -->
+    <section class="subscribe">
+        <div class="container">
+            <div class="subscribe-content">
+                <h2>获取最新项目更新</h2>
+                <p>订阅我们的通讯，第一时间获取精选项目和独家优惠。</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="输入您的邮箱地址" required>
+                    <button type="submit" class="btn btn-primary">订阅</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">NytrolabRWA</div>
+                    <p>连接创作者与投资者，共同打造游戏产业的未来。</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-qq"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>发现</h4>
+                    <ul>
+                        <li><a href="#">热门项目</a></li>
+                        <li><a href="#">即将结束</a></li>
+                        <li><a href="#">新上线</a></li>
+                        <li><a href="#">成功案例</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关于</h4>
+                    <ul>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">如何运作</a></li>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>资源</h4>
+                    <ul>
+                        <li><a href="#">创作者指南</a></li>
+                        <li><a href="#">投资者指南</a></li>
+                        <li><a href="#">规则与条款</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 NytrolabRWA. 保留所有权利。网站域名：<a href="https://www.nytrolab.com" target="_blank">www.nytrolab.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
