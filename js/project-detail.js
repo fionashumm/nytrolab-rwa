@@ -246,7 +246,7 @@ function addNewComment(text) {
     // 设置评论HTML
     newComment.innerHTML = `
         <div class="comment-avatar">
-            <img src="../images/user-avatar.jpg" alt="用户头像">
+            <img src="https://i.imgur.com/RzHm8Vt.jpg" alt="用户头像">
         </div>
         <div class="comment-content">
             <div class="comment-header">

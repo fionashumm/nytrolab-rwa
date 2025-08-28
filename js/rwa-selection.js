@@ -699,7 +699,7 @@ function loadMoreProjects() {
     // 模拟新项目数据
     const newProjects = [
         {
-            image: 'images/project-11.jpg',
+            image: 'https://i.imgur.com/9XcXAiL.jpg',
             title: '魔法学院',
             category: '角色扮演',
             stage: 'Alpha测试',
@@ -710,7 +710,7 @@ function loadMoreProjects() {
             badges: []
         },
         {
-            image: 'images/project-12.jpg',
+            image: 'https://i.imgur.com/dKvZGxS.jpg',
             title: '赛车传奇',
             category: '竞速',
             stage: 'Beta测试',
@@ -721,7 +721,7 @@ function loadMoreProjects() {
             badges: ['trending']
         },
         {
-            image: 'images/project-13.jpg',
+            image: 'https://i.imgur.com/pSVVW7K.jpg',
             title: '像素冒险',
             category: '动作冒险',
             stage: '概念阶段',

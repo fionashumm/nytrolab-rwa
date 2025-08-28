@@ -17,7 +17,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/grid-pattern.svg');
+    background-image: url('https://i.imgur.com/fP3GHyU.jpg');
     opacity: 0.1;
     z-index: 1;
 }
@@ -658,7 +658,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/grid-pattern.svg');
+    background-image: url('https://i.imgur.com/fP3GHyU.jpg');
     opacity: 0.1;
     z-index: 1;
 }

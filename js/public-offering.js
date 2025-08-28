@@ -674,7 +674,7 @@ function loadMoreProjects() {
     // 模拟新项目数据
     const newProjects = [
         {
-            image: 'images/project-7.jpg',
+            image: 'https://i.imgur.com/RzHm8Vt.jpg',
             title: '太空殖民：火星基地',
             category: '策略模拟',
             team: '红色星球工作室',
@@ -686,7 +686,7 @@ function loadMoreProjects() {
             badges: []
         },
         {
-            image: 'images/project-8.jpg',
+            image: 'https://i.imgur.com/9XcXAiL.jpg',
             title: '幽灵猎人：灵异调查',
             category: '恐怖冒险',
             team: '暗影游戏',
@@ -698,7 +698,7 @@ function loadMoreProjects() {
             badges: ['new']
         },
         {
-            image: 'images/project-9.jpg',
+            image: 'https://i.imgur.com/dKvZGxS.jpg',
             title: '厨师大战：美食竞赛',
             category: '休闲模拟',
             team: '美食游戏',
