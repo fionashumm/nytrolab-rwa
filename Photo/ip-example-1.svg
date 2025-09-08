@@ -1,0 +1,43 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ipBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff9a9e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fecfef;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="dragon" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#ipBg)"/>
+  
+  <!-- Dragon Symbol -->
+  <g transform="translate(150, 60)">
+    <!-- Dragon body -->
+    <ellipse cx="50" cy="40" rx="40" ry="25" fill="url(#dragon)"/>
+    <!-- Dragon head -->
+    <ellipse cx="30" cy="25" rx="20" ry="15" fill="url(#dragon)"/>
+    <!-- Dragon tail -->
+    <path d="M 90 40 Q 110 30 120 50 Q 110 60 90 50" fill="url(#dragon)"/>
+    <!-- Dragon wings -->
+    <ellipse cx="45" cy="20" rx="15" ry="8" fill="#ff4757" opacity="0.8"/>
+    <ellipse cx="55" cy="20" rx="15" ry="8" fill="#ff4757" opacity="0.8"/>
+    <!-- Eyes -->
+    <circle cx="25" cy="22" r="3" fill="#2c2c2c"/>
+    <circle cx="35" cy="22" r="3" fill="#2c2c2c"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="180" text-anchor="middle" fill="#2c3e50" font-family="Arial, sans-serif" font-size="24" font-weight="bold">龙族传说</text>
+  <text x="200" y="205" text-anchor="middle" fill="#34495e" font-family="Arial, sans-serif" font-size="16">Dragon Legend Animation</text>
+  
+  <!-- Stats -->
+  <g transform="translate(50, 230)">
+    <rect x="0" y="0" width="300" height="50" rx="10" fill="rgba(44,62,80,0.1)"/>
+    <text x="20" y="25" fill="#2c3e50" font-family="Arial, sans-serif" font-size="14">热度: 88</text>
+    <text x="120" y="25" fill="#2c3e50" font-family="Arial, sans-serif" font-size="14">支持者: 850</text>
+    <text x="220" y="25" fill="#2c3e50" font-family="Arial, sans-serif" font-size="14">类型: IP</text>
+  </g>
+</svg>
