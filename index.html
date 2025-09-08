@@ -6,6 +6,7 @@
     <title>NytrolabRWA - 游戏项目众筹平台</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/steam-layout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -36,13 +37,264 @@
         </div>
     </header>
 
-    <!-- 英雄区域 -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>🎮 发现你的下一个最爱游戏</h1>
-                <p>加入千万玩家的选择！在这里发现最酷的独立游戏，支持你喜欢的创作者，成为游戏历史的一部分。每一次支持，都是对梦想的投票！</p>
-                <div class="hero-stats">
+    <!-- Steam风格主体布局 -->
+    <div class="steam-layout">
+        <!-- 左侧导航栏 -->
+        <aside class="steam-sidebar">
+            <div class="sidebar-section">
+                <h3><i class="fas fa-fire"></i> 热门分类</h3>
+                <ul class="category-list">
+                    <li><a href="#" class="category-item active"><i class="fas fa-gamepad"></i> 角色扮演</a></li>
+                    <li><a href="#" class="category-item"><i class="fas fa-chess"></i> 策略游戏</a></li>
+                    <li><a href="#" class="category-item"><i class="fas fa-fist-raised"></i> 动作冒险</a></li>
+                    <li><a href="#" class="category-item"><i class="fas fa-film"></i> 游戏IP</a></li>
+                    <li><a href="#" class="category-item"><i class="fas fa-vr-cardboard"></i> VR/AR</a></li>
+                    <li><a href="#" class="category-item"><i class="fas fa-mobile-alt"></i> 移动游戏</a></li>
+                </ul>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3><i class="fas fa-star"></i> 筛选条件</h3>
+                <div class="filter-group">
+                    <label>融资进度</label>
+                    <div class="filter-options">
+                        <label><input type="checkbox"> 刚开始 (0-25%)</label>
+                        <label><input type="checkbox"> 进行中 (25-75%)</label>
+                        <label><input type="checkbox"> 即将完成 (75%+)</label>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <label>项目类型</label>
+                    <div class="filter-options">
+                        <label><input type="checkbox"> 游戏开发</label>
+                        <label><input type="checkbox"> IP授权</label>
+                        <label><input type="checkbox"> 周边产品</label>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- 主内容区域 -->
+        <main class="steam-main">
+            <!-- 顶部轮播横幅 -->
+            <section class="steam-hero">
+                <div class="hero-carousel">
+                    <div class="hero-slide active">
+                        <img src="Photo/微信圖片_2025-08-28_215749_659.jpg" alt="黑神话：悟空">
+                        <div class="hero-content">
+                            <h2>🐒 黑神话：悟空</h2>
+                            <p>国产3A大作震撼来袭！体验最纯正的西游文化，感受顶级画面表现力。</p>
+                            <div class="hero-stats">
+                                <span class="funding-amount">¥50,000,000</span>
+                                <span class="backers-count">50,000+ 支持者</span>
+                            </div>
+                            <div class="hero-actions">
+                                <a href="#" class="btn btn-primary btn-large">立即支持</a>
+                                <a href="#" class="btn btn-secondary">了解详情</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-slide">
+                        <img src="Photo/微信圖片_2025-08-28_215749_659.jpg" alt="星际探险">
+                        <div class="hero-content">
+                            <h2>🚀 星际探险：无尽边界</h2>
+                            <p>驾驶你的飞船，探索神秘星系！每个星球都有独特的生物和宝藏等你发现。</p>
+                            <div class="hero-stats">
+                                <span class="funding-amount">¥750,000</span>
+                                <span class="backers-count">1,250 支持者</span>
+                            </div>
+                            <div class="hero-actions">
+                                <a href="#" class="btn btn-primary btn-large">立即支持</a>
+                                <a href="#" class="btn btn-secondary">了解详情</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-controls">
+                    <button class="hero-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="hero-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                    </div>
+                    <button class="hero-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </section>
+
+            <!-- 推荐项目网格 -->
+            <section class="steam-featured">
+                <div class="section-header">
+                    <h2><i class="fas fa-crown"></i> 编辑推荐</h2>
+                    <div class="view-options">
+                        <button class="view-btn active" data-view="grid"><i class="fas fa-th"></i></button>
+                        <button class="view-btn" data-view="list"><i class="fas fa-list"></i></button>
+                    </div>
+                </div>
+                
+                <div class="projects-container grid-view">
+                    <!-- 大型推荐卡片 -->
+                    <div class="featured-large">
+                        <div class="project-card large">
+                            <div class="project-image">
+                                <img src="Photo/微信圖片_2025-08-28_215749_659.jpg" alt="幻想世界：重生">
+                                <div class="project-overlay">
+                                    <div class="project-tags">
+                                        <span class="tag hot">🔥 热门</span>
+                                        <span class="tag category">MMORPG</span>
+                                    </div>
+                                    <div class="project-actions">
+                                        <button class="action-btn"><i class="fas fa-heart"></i></button>
+                                        <button class="action-btn"><i class="fas fa-share"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>⚔️ 幻想世界：重生</h3>
+                                <p>史诗级MMORPG回归！与好友组队闯荡魔法世界，自由转职，无限可能。</p>
+                                <div class="project-meta">
+                                    <div class="funding-progress">
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 90%;"></div>
+                                        </div>
+                                        <div class="funding-info">
+                                            <span class="current">¥4,500,000</span>
+                                            <span class="target">/ ¥5,000,000</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-stats">
+                                        <span><i class="fas fa-users"></i> 3,200</span>
+                                        <span><i class="fas fa-clock"></i> 5天</span>
+                                        <span><i class="fas fa-fire"></i> 97</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 中等推荐卡片 -->
+                    <div class="featured-medium">
+                        <div class="project-card medium">
+                            <div class="project-image">
+                                <img src="Photo/微信圖片_2025-08-28_215749_659.jpg" alt="龙族传说">
+                                <div class="project-overlay">
+                                    <span class="tag category">动画IP</span>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h4>🐉 龙族传说：动画系列</h4>
+                                <div class="funding-mini">
+                                    <div class="progress-mini" style="width: 40%;"></div>
+                                    <span>¥2M / ¥5M</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card medium">
+                            <div class="project-image">
+                                <img src="Photo/微信圖片_2025-08-28_215749_659.jpg" alt="机甲战士">
+                                <div class="project-overlay">
+                                    <span class="tag urgent">⏰ 2天</span>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h4>🤖 机甲战士：未来战场</h4>
+                                <div class="funding-mini">
+                                    <div class="progress-mini" style="width: 95%;"></div>
+                                    <span>¥950K / ¥1M</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 分类展示区域 -->
+            <section class="steam-categories">
+                <h2><i class="fas fa-th-large"></i> 热门分类</h2>
+                <div class="category-showcase">
+                    <div class="category-card">
+                        <div class="category-header">
+                            <h3><i class="fas fa-gamepad"></i> 角色扮演</h3>
+                            <a href="#" class="view-more">查看全部 <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="category-projects">
+                            <div class="mini-project">
+                                <img src="Photo/微信圖片_2025-08-28_215749_659.jpg" alt="项目1">
+                                <div class="mini-info">
+                                    <h5>魔法学院</h5>
+                                    <span>¥425K</span>
+                                </div>
+                            </div>
+                            <div class="mini-project">
+                                <img src="Photo/微信圖片_2025-08-28_215749_659.jpg" alt="项目2">
+                                <div class="mini-info">
+                                    <h5>暗影猎人</h5>
+                                    <span>¥8.5M</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- 右侧边栏 -->
+        <aside class="steam-rightbar">
+            <!-- 特价项目 -->
+            <div class="sidebar-widget">
+                <h3><i class="fas fa-tags"></i> 限时特价</h3>
+                <div class="special-offers">
+                    <div class="offer-item">
+                        <img src="Photo/微信圖片_2025-08-28_215749_659.jpg" alt="特价项目">
+                        <div class="offer-info">
+                            <h4>独立游戏合集</h4>
+                            <div class="price-info">
+                                <span class="original-price">¥299</span>
+                                <span class="sale-price">¥199</span>
+                                <span class="discount">-33%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 新品推荐 -->
+            <div class="sidebar-widget">
+                <h3><i class="fas fa-sparkles"></i> 新品上架</h3>
+                <div class="new-releases">
+                    <div class="release-item">
+                        <img src="Photo/微信圖片_2025-08-28_215749_659.jpg" alt="新品">
+                        <div class="release-info">
+                            <h4>像素冒险</h4>
+                            <span class="release-date">3天前上架</span>
+                            <div class="quick-stats">
+                                <span><i class="fas fa-users"></i> 156</span>
+                                <span><i class="fas fa-fire"></i> 78</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 社区动态 -->
+            <div class="sidebar-widget">
+                <h3><i class="fas fa-comments"></i> 社区动态</h3>
+                <div class="community-feed">
+                    <div class="feed-item">
+                        <div class="user-avatar">
+                            <img src="Photo/微信圖片_2025-08-28_215749_659.jpg" alt="用户头像">
+                        </div>
+                        <div class="feed-content">
+                            <p><strong>游戏大神</strong> 刚刚支持了 <strong>星际探险</strong></p>
+                            <span class="feed-time">2分钟前</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 统计信息 -->
+            <div class="sidebar-widget stats-widget">
+                <h3><i class="fas fa-chart-line"></i> 平台数据</h3>
+                <div class="stats-grid">
                     <div class="stat-item">
                         <span class="stat-number">10,000+</span>
                         <span class="stat-label">活跃玩家</span>
@@ -55,315 +307,14 @@
                         <span class="stat-number">¥50M+</span>
                         <span class="stat-label">累计支持</span>
                     </div>
-                </div>
-                <div class="hero-buttons">
-                    <a href="#featured-projects" class="btn btn-primary btn-large">🚀 开始探索</a>
-                    <a href="#" class="btn btn-secondary btn-large">💡 我有想法</a>
-                </div>
-            </div>
-        </div>
-        <!-- 黑神话：悟空轮播图 -->
-        <div class="wukong-slider">
-            <div class="wukong-slides">
-                <div class="wukong-slide active">
-                    <img src="https://i.imgur.com/JQTXrG2.jpg" alt="黑神话：悟空宣传图1">
-                </div>
-                <div class="wukong-slide">
-                    <img src="https://i.imgur.com/9XcXAiL.jpg" alt="黑神话：悟空宣传图2">
-                </div>
-                <div class="wukong-slide">
-                    <img src="https://i.imgur.com/dKvZGxS.jpg" alt="黑神话：悟空宣传图3">
-                </div>
-            </div>
-            <div class="wukong-slider-controls">
-                <button class="wukong-prev"><i class="fas fa-chevron-left"></i></button>
-                <div class="wukong-dots">
-                    <span class="wukong-dot active" data-slide="0"></span>
-                    <span class="wukong-dot" data-slide="1"></span>
-                    <span class="wukong-dot" data-slide="2"></span>
-                </div>
-                <button class="wukong-next"><i class="fas fa-chevron-right"></i></button>
-            </div>
-        </div>
-    </section>
-
-    <!-- 热门项目 -->
-    <section id="featured-projects" class="featured-projects">
-        <div class="container">
-            <div class="section-header">
-                <h2>🔥 玩家最爱</h2>
-                <p class="section-subtitle">这些游戏正在征服全世界的玩家</p>
-                <a href="#" class="view-all">发现更多好游戏 <i class="fas fa-arrow-right"></i></a>
-            </div>
-            <div class="projects-grid">
-                <!-- 项目卡片 1 -->
-                <div class="project-card">
-                    <div class="project-thumbnail">
-                        <img src="Photo/微信圖片_2025-08-28_215749_659.jpg" alt="项目缩略图">
-                        <div class="project-category game">游戏</div>
-                    </div>
-                    <div class="project-info">
-                        <h3><a href="project-detail.html">🚀 星际探险：无尽边界</a></h3>
-                        <p class="project-desc">驾驶你的飞船，探索神秘星系！每个星球都有独特的生物和宝藏等你发现。准备好成为银河系的传奇探险家了吗？</p>
-                        <div class="project-meta">
-                            <div class="funding-progress">
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 75%;"></div>
-                                </div>
-                                <div class="funding-stats">
-                                    <span class="funded">¥750,000</span>
-                                    <span class="goal">目标: ¥1,000,000</span>
-                                </div>
-                            </div>
-                            <div class="project-time-left">
-                                <i class="far fa-clock"></i> 剩余15天
-                            </div>
-                        </div>
-                        <div class="project-popularity">
-                            <span class="heat-index"><i class="fas fa-fire"></i> 热度: 95</span>
-                            <span class="backers"><i class="fas fa-user-friends"></i> 支持者: 1,250</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 项目卡片 2 -->
-                <div class="project-card">
-                    <div class="project-thumbnail">
-                        <img src="Photo/微信圖片_2025-08-28_215749_659.jpg" alt="项目缩略图">
-                        <div class="project-category ip">IP</div>
-                    </div>
-                    <div class="project-info">
-                        <h3><a href="project-detail.html">🐉 龙族传说：动画系列</a></h3>
-                        <p class="project-desc">超燃龙族动画来袭！顶级制作团队打造，每一帧都是电影级画质。龙王路明非的传奇故事即将震撼你的心灵！</p>
-                        <div class="project-meta">
-                            <div class="funding-progress">
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 40%;"></div>
-                                </div>
-                                <div class="funding-stats">
-                                    <span class="funded">¥2,000,000</span>
-                                    <span class="goal">目标: ¥5,000,000</span>
-                                </div>
-                            </div>
-                            <div class="project-time-left">
-                                <i class="far fa-clock"></i> 剩余30天
-                            </div>
-                        </div>
-                        <div class="project-popularity">
-                            <span class="heat-index"><i class="fas fa-fire"></i> 热度: 88</span>
-                            <span class="backers"><i class="fas fa-user-friends"></i> 支持者: 850</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 项目卡片 3 -->
-                <div class="project-card">
-                    <div class="project-thumbnail">
-                        <img src="Photo/微信圖片_2025-08-28_215749_659.jpg" alt="项目缩略图">
-                        <div class="project-category game">游戏</div>
-                    </div>
-                    <div class="project-info">
-                        <h3><a href="project-detail.html">⚔️ 幻想世界：重生</a></h3>
-                        <p class="project-desc">史诗级MMORPG回归！与好友组队闯荡魔法世界，自由转职，无限可能。这里有你梦寐以求的冒险生活！</p>
-                        <div class="project-meta">
-                            <div class="funding-progress">
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 90%;"></div>
-                                </div>
-                                <div class="funding-stats">
-                                    <span class="funded">¥4,500,000</span>
-                                    <span class="goal">目标: ¥5,000,000</span>
-                                </div>
-                            </div>
-                            <div class="project-time-left">
-                                <i class="far fa-clock"></i> 剩余5天
-                            </div>
-                        </div>
-                        <div class="project-popularity">
-                            <span class="heat-index"><i class="fas fa-fire"></i> 热度: 97</span>
-                            <span class="backers"><i class="fas fa-user-friends"></i> 支持者: 3,200</span>
-                        </div>
+                    <div class="stat-item">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">成功率</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- 分类浏览 -->
-    <section class="categories">
-        <div class="container">
-            <div class="section-header">
-                <h2>🎯 找到你的菜</h2>
-                <p class="section-subtitle">不同类型，总有一款适合你</p>
-            </div>
-            <div class="categories-grid">
-                <a href="#" class="category-item">
-                    <div class="category-icon"><i class="fas fa-gamepad"></i></div>
-                    <h3>角色扮演</h3>
-                </a>
-                <a href="#" class="category-item">
-                    <div class="category-icon"><i class="fas fa-chess"></i></div>
-                    <h3>策略游戏</h3>
-                </a>
-                <a href="#" class="category-item">
-                    <div class="category-icon"><i class="fas fa-fist-raised"></i></div>
-                    <h3>动作冒险</h3>
-                </a>
-                <a href="#" class="category-item">
-                    <div class="category-icon"><i class="fas fa-film"></i></div>
-                    <h3>游戏IP</h3>
-                </a>
-                <a href="#" class="category-item">
-                    <div class="category-icon"><i class="fas fa-vr-cardboard"></i></div>
-                    <h3>VR/AR</h3>
-                </a>
-                <a href="#" class="category-item">
-                    <div class="category-icon"><i class="fas fa-mobile-alt"></i></div>
-                    <h3>移动游戏</h3>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 即将结束的项目 -->
-    <section class="ending-soon">
-        <div class="container">
-            <div class="section-header">
-                <h2>⏰ 最后机会</h2>
-                <p class="section-subtitle">错过就要等下次了，赶紧上车！</p>
-                <a href="#" class="view-all">抓住最后机会 <i class="fas fa-arrow-right"></i></a>
-            </div>
-            <div class="projects-grid">
-                <!-- 项目卡片 1 -->
-                <div class="project-card">
-                    <div class="project-thumbnail">
-                        <img src="Photo/微信圖片_2025-08-28_215749_659.jpg" alt="项目缩略图">
-                        <div class="project-category game">游戏</div>
-                        <div class="ending-badge">仅剩2天</div>
-                    </div>
-                    <div class="project-info">
-                        <h3><a href="project-detail.html">🤖 机甲战士：未来战场</a></h3>
-                        <p class="project-desc">驾驶巨型机甲，称霸未来战场！自定义你的专属战机，与全球玩家展开史诗对决。仅剩2天，错过再等一年！</p>
-                        <div class="project-meta">
-                            <div class="funding-progress">
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 95%;"></div>
-                                </div>
-                                <div class="funding-stats">
-                                    <span class="funded">¥950,000</span>
-                                    <span class="goal">目标: ¥1,000,000</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-popularity">
-                            <span class="heat-index"><i class="fas fa-fire"></i> 热度: 92</span>
-                            <span class="backers"><i class="fas fa-user-friends"></i> 支持者: 1,800</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 项目卡片 2 -->
-                <div class="project-card">
-                    <div class="project-thumbnail">
-                        <img src="Photo/微信圖片_2025-08-28_215749_659.jpg" alt="项目缩略图">
-                        <div class="project-category ip">IP</div>
-                        <div class="ending-badge">仅剩3天</div>
-                    </div>
-                    <div class="project-info">
-                        <h3><a href="project-detail.html">魔法学院：桌游系列</a></h3>
-                        <p class="project-desc">基于热门小说《魔法学院》改编的桌游系列，包含卡牌游戏和角色扮演元素。</p>
-                        <div class="project-meta">
-                            <div class="funding-progress">
-                                <div class="progress-bar">
-                                    <div class="progress" style="width: 85%;"></div>
-                                </div>
-                                <div class="funding-stats">
-                                    <span class="funded">¥425,000</span>
-                                    <span class="goal">目标: ¥500,000</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-popularity">
-                            <span class="heat-index"><i class="fas fa-fire"></i> 热度: 89</span>
-                            <span class="backers"><i class="fas fa-user-friends"></i> 支持者: 950</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 社区活动 -->
-    <section class="community">
-        <div class="container">
-            <div class="section-header">
-                <h2>🎉 玩家聚会</h2>
-                <p class="section-subtitle">和志同道合的小伙伴一起嗨</p>
-                <a href="#" class="view-all">加入我们 <i class="fas fa-arrow-right"></i></a>
-            </div>
-            <div class="community-grid">
-                <div class="community-card">
-                    <div class="community-image">
-                        <img src="Photo/微信圖片_2025-08-28_215749_659.jpg" alt="社区活动">
-                    </div>
-                    <div class="community-info">
-                        <h3>🎮 游戏大神面对面</h3>
-                        <p class="community-date"><i class="far fa-calendar-alt"></i> 2023年8月15日</p>
-                        <p class="community-desc">和游戏界大佬零距离交流！听他们分享爆款游戏背后的故事，还有机会获得内测资格哦～</p>
-                        <a href="#" class="btn btn-secondary">我要参加</a>
-                    </div>
-                </div>
-                <div class="community-card">
-                    <div class="community-image">
-                        <img src="Photo/微信圖片_2025-08-28_215749_659.jpg" alt="社区活动">
-                    </div>
-                    <div class="community-info">
-                        <h3>💰 如何让你的创意变现</h3>
-                        <p class="community-date"><i class="far fa-calendar-alt"></i> 2023年8月22日</p>
-                        <p class="community-desc">有好创意但不知道怎么赚钱？来这里！业内大咖手把手教你把脑洞变成真金白银。</p>
-                        <a href="#" class="btn btn-secondary">立即报名</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 成功案例 -->
-    <section class="success-stories">
-        <div class="container">
-            <div class="section-header">
-                <h2>🏆 成功传奇</h2>
-                <p class="section-subtitle">他们的梦想成真了，你的呢？</p>
-            </div>
-            <div class="stories-slider">
-                <div class="story-card">
-                    <div class="story-image">
-                        <img src="Photo/微信圖片_2025-08-28_215749_659.jpg" alt="成功案例">
-                    </div>
-                    <div class="story-content">
-                        <h3>🎯《暗影猎人》</h3>
-                        <p class="story-stats">筹集金额: ¥8,500,000 | 支持者: 12,000+</p>
-                        <p class="story-desc">从零开始的独立游戏，现在Steam上好评如潮！创始人说："感谢每一个相信我们的玩家，你们让梦想照进现实！"</p>
-                        <a href="#" class="btn btn-text">看看他们的逆袭之路 <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 订阅区域 -->
-    <section class="subscribe">
-        <div class="container">
-            <div class="subscribe-content">
-                <h2>获取最新项目更新</h2>
-                <p>订阅我们的通讯，第一时间获取精选项目和独家优惠。</p>
-                <form class="subscribe-form">
-                    <input type="email" placeholder="输入您的邮箱地址" required>
-                    <button type="submit" class="btn btn-primary">订阅</button>
-                </form>
-            </div>
-        </div>
-    </section>
+        </aside>
+    </div>
 
     <!-- 页脚 -->
     <footer class="footer">
@@ -414,5 +365,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/steam-layout.js"></script>
 </body>
 </html>
